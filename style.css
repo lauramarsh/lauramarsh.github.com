@@ -54,6 +54,10 @@ body {
   color: white;
 }
 
+.Blurb .Job h3 {
+  color: rgba(0,21,52,.7);
+}
+
 .Blurb .Description {
   vertical-align: top;
 }
@@ -214,6 +218,21 @@ body {
 	top: 0;
 }
 
+#header h2 a {
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+
+  color: rgba(0,21,52,.85);
+}
+
+#header h2 a:hover {
+  color: white;
+}
+
 #header nav {
 	height: inherit;
 	line-height: inherit;
@@ -303,9 +322,9 @@ body {
 
 #Profile {
   padding: 1em;
-  margin-left: 2.5em;
-  width: 15em;
-  height: 15em;
+  margin-left: 4em;
+  width: 12em;
+  height: 12em;
 }
 
 #Buttons {

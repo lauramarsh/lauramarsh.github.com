@@ -10,13 +10,109 @@ body {
   padding: 0;
 }
 
+.Section {
+  width: 100%;
+  height: 100%;
+}
+
+.Subtitle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35%;
+  padding: .1em;
+  color: white;
+  box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.25);
+}
+
 .about, .education {
   padding: 50px 0;
+}
+
+.Blurb {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: auto;
+  box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.25);
+}
+
+.Blurb ol {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding-right: .5em;
+  padding-left: .5em;
+}
+
+.Blurb .Job {
+  display: inline-block;
+  text-align: left;
+  line-height: .1em;
+  padding: 0;
+  margin: 0;
+}
+
+.Blurb .Job h2 {
+  /*color: #C0C0C0;*/
+  color: white;
+}
+
+.Blurb .Job h3 {
+  color: rgba(0,21,52,.7);
+}
+
+.Blurb .Description {
+  vertical-align: top;
+}
+
+.Blurb img {
+  height: 8em;
+  width: 8em;
+  padding: 0;
+  margin: 0;
+}
+
+.Blurb p {
+  padding: .8em;
+  color: white;
+  width: 20em;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+
+.left {
+  padding-right: .5em;
+  text-align: right;
+  margin-right: 65%;
+}
+
+.right {
+  padding-left: .5em;
+  text-align: left;
+  margin-left: 65%;
+}
+
+.bright {
+  margin-left: 40%;
+}
+
+.bleft {
+  margin-right: 40%;
+}
+
+.grey {
+  background-color: rgba(0,21,52,.34);
 }
 
 .bg-orange {
   color: #fff;
   background-color: rgb(255, 191, 128);
+}
+
+.blue {
+  background-color: rgba(0,21,52,.85);
 }
 
 .button {
@@ -56,6 +152,10 @@ body {
   background-color: rgb(255, 170, 0);
 }
 
+.contact {
+  display: block;
+}
+
 .col-full, .col-lg-10, .col-mid-third, .col-sml-third {
   position: relative;
   min-height: 1px;
@@ -80,10 +180,6 @@ body {
 
 .container:after, .row:after {
   clear: both;
-}
-
-.education-item {
-    margin-bottom: 30px;
 }
 
 .footer{
@@ -137,6 +233,32 @@ body {
 
 .footer-right > a:hover {
   background-color: darkblue;
+}
+
+.education-item {
+    margin-bottom: 30px;
+}
+
+.projects {
+  display: table;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+
+  background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url(yosemite.jpg) no-repeat center center scroll;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.projects-item {
+    margin-bottom: 30px;
+    line-height: normal;
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
 }
 
 .header {
@@ -258,28 +380,6 @@ hr.tiny {
   border-radius: 50%;
 }
 
-.projects {
-  display: table;
-  width: 100%;
-  height: 400px;
-  color: #fff;
-
-  background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url(yosemite.jpg) no-repeat center center scroll;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.projects-item {
-    margin-bottom: 30px;
-    line-height: normal;
-    max-width: 50%;
-    margin: auto;
-    text-align: center;
-}
-
 .row {
   margin-right: -15px;
   margin-left: -15px;
@@ -296,21 +396,21 @@ hr.tiny {
   text-align: center;
 }
 
-.centered-vertical {
+.text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     color: white;
 }
 
-.centered-vertical h1 {
+.text-vertical-center h1 {
     margin: 0;
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
 }
 
-.centered-vertical h3 {
+.text-vertical-center h3 {
     font-style: italic;
 }
 

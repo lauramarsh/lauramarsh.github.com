@@ -2,100 +2,171 @@
 
 <head>
 	<title>Laura Marsh Web</title>
+	<meta name="author" content="Laura Marsh">
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
 <body>
 
-	<header id="header">
-		<h2><a href="index.html">LM</a></h2>
-		<nav id="nav">
+	<header class="header nav-fixed">
+		<nav class="nav">
 			<ul>
 				<li><a href="#About"> About </a></li>
-				<li><a href="#Experience"> Experience </a></li>
-				<!-- <li><a href="#Knowledge"> Knowledge </a></li> -->
+				<li><a href="#Education"> Education </a></li>
+				<li><a href="#Projects"> Projects </a></li>
+				<li><a href="#Contact"> Contact </a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<section id="Home">
-		<div id="Title">
+	<header class="home">
+		<div class="centered-vertical">
 			<h1>Laura Marsh</h1>
-			<h5>Hi, I'm a Software Engineer</h5>
+			<br>
+			<br>
+			<a href="#About" class="button">Get Started</a>
 		</div>
-	</section>
+	</header>
 
-	<section id="About" class="Section">
-		<div class="Subtitle Left Blue">
-			<h3>About</h3>
-		</div>
-		<div class="Blurb Bright Grey">
-			<img id="Profile" src="me.jpg">
-			<div id="Buttons">
-				<a href="resumeApril17.pdf" class="Button">Resume</a>
-				<!-- <a href="#" class="Button">Contact Me</a> -->
+
+	<!-- rename centered?, -->
+
+
+	<section id="About" class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-full centered">
+					<img class="profile" src="me2.jpg">
+					<h2>About me,</h2>
+					<p class="summary">
+						I'm a starry eyed young programmer on a quest to apply all this
+						college-knowledge to more professional settings. My short term goals
+						are to ably afford both a Netflix subscription and an Amazon Prime
+						account at the same time, but besides that I want to find a team/project
+						that excites me.  I currently have experience in front-end web
+						development, but I'm eager to see how I can expand my skillset. My
+						long term goals are to one day be a technically respected manager -
+						to work with people making products for people.
+					</p>
+					<a href="Resume 2017 Nov.pdf" class="button button-filled">Resume</a>
+					<a href="mailto:la.ly.marsh@gmail.com" target="_top" class="button button-filled">Send Mail</a>
+				</div>
 			</div>
-			<p>Good Morning! My name is Laura Marsh, and I'm a 3rd year Software Engineering student
-				enrolled at University of California, Irvine (Graduating 2018).  I've developed a passion and
-				interest in software development, and I'm excited to see how many ways I can
-				further my knowledge of programming.  Recently I've been focusing on mobile and web
-				development.
-			</p>
-			<p>Because I was born and raised in the San Francisco Bay Area, I've been surrounded
-				by technology my whole life.  I value contribution over competition, and my goal is to be
-				a part of a bigger picture.  I want to find fulfillment in knowing I created something that's
-				enhancing our lives.
-			</p>
-			<p>Thank you for taking the time to get to know me a little.
-			</p>
 		</div>
 	</section>
 
-	<section id="Experience" class="Section">
-		<div class="Subtitle Right Blue">
-			<h3>Experience</h3>
-		</div>
-		<div class="Blurb Bleft Grey">
-			<ol>
-				<li><article>
-					<img src="inwerks.png">
-					<div class="Job">
-						<h2>Android OS Developer</h2>
-						<h3>DEC '16 - APR '17</h3>
-						<h4>@ InWerks, Rancho Santa Marguerita</h4>
-						<h5>Technologies: Java, Ubuntu, Android Studio</h5>
-					</div>
-				</article></li>
-				<li><article>
-					<img src="dellemc.jpg">
-					<div class="Job">
-						<h2> Firmware Intern</h2>
-						<h3> JUN '15 - OCT '15</h3>
-						<h4>@ Dell/EMC, Menlo Park</h4>
-						<h5>Technologies: Python, Git, Linux</h5>
-					</div>
-				</article></
-			</ol>
-		</div>
+	<section id="Education" class="education bg-orange">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-10 col-offset">
+					<h2>Education</h2>
+					<hr class="small">
+					<div class="row">
+						<div class="col-mid-third col-sml-third">
+              <div class="education-item">
+                <p><b>B.S. in Software Engineering</b><br><br>University of California, Irvine<br>June, 2018</p>
+              </div>
+            </div>
+            <div class="col-mid-third col-sml-third">
+              <div class="education-item">
+                <p>
+									<b>Relevant Courses:</b><br>
+									<br>Programming in Python, Java, C++
+									<br>Data Structures
+									<br>Algorithms Analysis
+									<br>Computer Networks
+									<br>Software Testing & QA
+									<br>Software Design & Implementation
+									<br>Intro to Product Management
+									<br>User interaction Software
+								</p>
+              </div>
+            </div>
+            <div class="col-mid-third col-sml-third">
+              <div class="education-item">
+                <p><b>Member of</b><br><br>Theta Tau<br>(a professional<br>engineering fraternity),<br>Computer Science Student Council</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+	<section id="Projects" class="projects">
+    <div class="centered-vertical">
+			<br>
+			<h2>Projects</h2>
+			<hr class="small">
+			<div class="projects-item">
+	      <h3>Kurzgesagt Landing Page</h3>
+				<h5>
+					<p>
+						<small>HTML, CSS, JS</small><br>
+						A small landing page I created for a Youtube series I adore called
+						‘Kurzgesagt’.  I used this page to practice programming with basic
+						Javascript and many popular web-design techniques and frameworks such as
+						mobile-first web-design, Bootstrap, and combining online templates.
+					</p>
+				</h5>
+			</div>
+			<hr class="tiny">
+			<div class="projects-item">
+	      <h3>Multithreaded Elevator Simulator</h3>
+				<h5>
+					<p>
+						<small>JAVA</small><br>
+						A small project dedicated to understanding multi-threading in Java.
+						This program simulates 5 elevators (as threads) inside a building,
+						picking up and dropping off pedestrians on random input intervals.
+					</p>
+				</h5>
+			</div>
+			<hr class="tiny">
+			<div class="projects-item">
+	      <h3>Mapquest Simulator</h3>
+				<h5>
+					<p>
+						<small>PYTHON</small><br>
+						A simple terminal-run program that displays information about a
+						journey  from input location A to input location B using the Open
+						MapQuest API.  The project displays  a trip's step-by-step directions
+						and total estimated duration, among other characteristics.  Inputs
+						are real-life destinations, and information outputted is realistic
+						and accurate to the MapQuest API.
+					</p>
+				</h5>
+			</div>
+    </div>
 	</section>
 
-	<footer id="footer">
-		<div class="fright">
-			<a href="https://www.linkedin.com/in/laura-marsh-78803688/" id="linkedin">
+	<footer id="Contact" class="footer">
+		<div class="footer-right">
+			<a href="https://www.linkedin.com/in/laura-marsh-78803688/" class="linkedin">
 				<img src="linkedin.png">
 			</a>
-			<a href="https://github.com/lauramarsh" id="github">
+			<a href="https://github.com/lauramarsh" class="github">
 				<img src="github.png">
 			</a>
 		</div>
-		<div class="fleft">
+		<div class="footer-left">
 			<h1>Laura Marsh</h1>
 			<h3>la.ly.marsh@gmail.com</h3>
-			</div>
+		</div>
 	</footer>
 
-
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$('a[href^="#"]').on('click', function(event) {
+			var target = $(this.getAttribute('href'));
+		  if( target.length ) {
+				event.preventDefault();
+		    $('html, body').stop().animate({
+					scrollTop: target.offset().top
+				}, 1000);
+			}
+		});
+	</script>
 
 </body>
 

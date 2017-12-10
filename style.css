@@ -153,12 +153,17 @@ body {
   font-size: 18px;
 }
 
-.container-findings_block > h4 > p {
+.container-findings_block > p {
   font-size: 16px;
 }
 
 .container-findings_research {
   margin-top: 6em;
+}
+
+.container-findings_summary > p {
+  color: black;
+  text-shadow: none;
 }
 
 .container:before,

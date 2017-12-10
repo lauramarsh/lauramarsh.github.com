@@ -104,6 +104,7 @@ body {
   border-radius: 10px;
 
   color: white;
+  font-size: 16px;
   background-color: rgb(255, 170, 0);
   box-shadow: 0 0 0.2em 0 rgba(0, 0, 0, 0.25);
 }
@@ -111,6 +112,13 @@ body {
 .button-filled:hover {
   color: rgb(255, 170, 0);
   background-color: white;
+}
+
+.button-arrow {
+  font-size: 30px;
+  padding: 8px;
+  padding-top: 2px;
+  padding-bottom: 7px;
 }
 
 .contact {
@@ -131,6 +139,28 @@ body {
   margin-left: auto;
 }
 
+.container-findings {
+  color: #e1914c;
+  text-shadow: 0 0 10px #e1914c;
+  text-align: center;
+  background-color: rgba(255,255,255,.7);
+  margin-bottom: 2em;
+}
+
+.container-findings_block {
+  color: black;
+  text-shadow: none;
+  font-size: 18px;
+}
+
+.container-findings_block > h4 > p {
+  font-size: 16px;
+}
+
+.container-findings_research {
+  margin-top: 6em;
+}
+
 .container:before,
 .container:after,
 .row:before,
@@ -141,6 +171,10 @@ body {
 
 .container:after, .row:after {
   clear: both;
+}
+
+.credits {
+  display: none;
 }
 
 .education-item {
@@ -170,6 +204,18 @@ body {
   color: white;
 }
 
+.footer-left > h3 > a {
+  color: #EB9352;
+}
+
+.footer-left > h3 > a:hover {
+  color: #D96D58;
+}
+
+.footer-left > h3 > a:visited {
+  color: #D96D58;
+}
+
 .footer-right{
 	float: right;
 	margin-top: 6px;
@@ -197,7 +243,7 @@ body {
 }
 
 .footer-right > a:hover {
-  background-color: darkblue;
+  background-color: #EB9352;
 }
 
 .header {
@@ -262,6 +308,7 @@ hr.tiny {
 }
 
 .nav {
+  font-size: 1.5em;
 	height: inherit;
 	line-height: inherit;
 	position: absolute;

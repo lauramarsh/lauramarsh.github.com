@@ -21,6 +21,10 @@ body {
   background-color: rgb(255, 191, 128);
 }
 
+.block-left {
+  margin-right: 14px;
+}
+
 .button {
   -moz-transition: text-shadow 0.4s ease-in-out;
   -webkit-transition: text-shadow 0.4s ease-in-out;
@@ -151,19 +155,35 @@ body {
   color: black;
   text-shadow: none;
   font-size: 18px;
+  width: 15em;
+  display: inline-flex;
+  margin-right: 20px;
 }
 
 .container-findings_block > p {
   font-size: 16px;
+  text-align: left;
 }
 
 .container-findings_research {
   margin-top: 6em;
 }
 
+.container-findings {
+  text-align: center;
+}
+
 .container-findings_summary > p {
   color: black;
   text-shadow: none;
+  text-align: left;
+  text-indent: 1em;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.container-usertest {
+  width: 21em !important;
 }
 
 .container:before,
@@ -449,6 +469,12 @@ hr.tiny {
 
 
 @media (max-device-width: 480px) and (orientation: landscape) {
+
+  .container-findings_summary > p {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
   .header {
     display: none;
   }
@@ -467,6 +493,11 @@ hr.tiny {
 @media (min-width: 768px) {
   .container {
     width: 750px;
+  }
+
+  .container-findings_summary > p {
+    padding-left: 7em;
+    padding-right: 7em;
   }
 
   .col-sml-third {
@@ -497,6 +528,11 @@ hr.tiny {
     width: 970px;
   }
 
+  .container-findings_summary > p {
+    padding-left: 15em;
+    padding-right: 15em;
+  }
+
   .col-mid-third {
     float: left;
   }
@@ -519,6 +555,11 @@ hr.tiny {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+
+  .container-findings_summary > p {
+    padding-left: 20em;
+    padding-right: 20em;
   }
 
   .col-full, .col-lg-10 {

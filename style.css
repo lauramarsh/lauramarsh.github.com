@@ -26,10 +26,10 @@ body {
 }
 
 .button {
-  -moz-transition: text-shadow 0.4s ease-in-out;
-  -webkit-transition: text-shadow 0.4s ease-in-out;
-  -o-transition: text-shadow 0.4s ease-in-out;
-  -ms-transition: text-shadow 0.4s ease-in-out;
+  -moz-transition: text-shadow 0.3s ease-in-out;
+  -webkit-transition: text-shadow 0.3s ease-in-out;
+  -o-transition: text-shadow 0.3s ease-in-out;
+  -ms-transition: text-shadow 0.3s ease-in-out;
   /*transition: text-shadow 0.4s ease-in-out;*/
 
   padding: 10px 25px;
@@ -47,7 +47,7 @@ body {
 }
 
 .button-empty:hover {
-  text-shadow: 0 0 13px white;
+  text-shadow: 0 0 15px white;
 }
 
 .button-empty_one {
@@ -384,8 +384,8 @@ hr.tiny {
 }
 
 .profile {
-  width: 12em;
-  height: 12em;
+  width: 15em;
+  height: 15em;
   border-radius: 50%;
 }
 
@@ -480,8 +480,8 @@ hr.tiny {
   }
 
   .profile {
-    width: 4em;
-    height: 4em;
+    width: 11em;
+    height: 11em;
     border-radius: 50%;
   }
 
@@ -509,8 +509,8 @@ hr.tiny {
   }
 
   .profile {
-    width: 6em;
-    height: 6em;
+    width: 13em;
+    height: 13em;
     border-radius: 50%;
   }
 
@@ -542,8 +542,8 @@ hr.tiny {
   }
 
   .profile {
-    width: 8em;
-    height: 8em;
+    width: 15em;
+    height: 15em;
     border-radius: 50%;
   }
 
@@ -579,13 +579,18 @@ hr.tiny {
   }
 
   .profile {
-    width: 10em;
-    height: 10em;
+    width: 15em;
+    height: 15em;
     border-radius: 50%;
   }
 
   .projects-item {
     max-width: 50%;
+  }
+
+  .summary {
+    padding-left: 10em;
+    padding-right: 10em;
   }
 }
 

@@ -12,7 +12,7 @@ body {
   padding: 0;
 }
 
-.about, .education {
+.about {
   padding: 50px 0;
 }
 
@@ -118,6 +118,20 @@ body {
   background-color: white;
 }
 
+.button-filled_exp {
+  font-size: 12px;
+  color: rgb(255, 170, 0);
+  background-color: white;
+  box-shadow: 0 0 0.2em 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.button-filled_exp:hover {
+  cursor: default;
+}
+
 .button-arrow {
   font-size: 30px;
   padding: 8px;
@@ -134,6 +148,35 @@ body {
   min-height: 1px;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.col {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.col-left {
+  float: right;
+  margin-left: auto;
+  width: 350px;
+}
+
+.col-left_title {
+  text-align: right;
+  font-size: 60px;
+}
+
+.col-right {
+  float: left;
+  margin-right: auto;
+  width: 350px;
+}
+
+.col-right_title {
+  text-align: left;
+  font-size: 60px;
 }
 
 .container {
@@ -202,8 +245,85 @@ body {
   display: none;
 }
 
-.education-item {
+.education {
+  padding: 50px 0;
+  display: flex;
+}
+
+.ed-item {
     margin-bottom: 30px;
+    max-width: 250px;
+}
+
+.exp {
+  display: table;
+  width: 100%;
+  color: #fff;
+
+  background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url(yosemite.jpg) no-repeat center center scroll;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.exp-item {
+  color: black;
+  width: 100%;
+  margin-bottom: 10px;
+  margin:5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0px;
+  text-align: left;
+  word-wrap: break-word;
+  background-color: rgb(255, 255, 255);
+  background-clip: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.125);
+  border-image: initial;
+  border-radius: 0.25rem;
+}
+
+.exp-item > img {
+  max-width: 330px;
+  margin-left: 10px;
+}
+
+.exp-item > h3, h4 {
+  margin: 8px;
+}
+
+.exp-item > h5 {
+  margin: 5px;
+  text-align: right;
+}
+
+.exp-item > h5 > p{
+  text-align: left;
+}
+
+.exp-item_small {
+  max-width: 200px !important;
+  margin-left: 75px !important;
+}
+
+.exp-left {
+  text-align: left;
+}
+
+.exp-left > h3 {
+}
+
+.exp-link {
+  text-align: right;
+}
+
+.exp-right {
+  text-align: left;
 }
 
 .footer{
@@ -213,9 +333,7 @@ body {
 	width: 100%;
 	text-align: left;
 	font: normal 16px sans-serif;
-
 	padding: 45px 50px;
-	margin-top: 80px;
 }
 
 .footer-left {
@@ -324,14 +442,6 @@ body {
   -o-background-size: cover;
 }
 
-hr.small {
-  max-width: 100px;
-}
-
-hr.tiny {
-  max-width: 60px;
-}
-
 .nav {
   font-size: 1.5em;
 	height: inherit;
@@ -387,28 +497,6 @@ hr.tiny {
   width: 15em;
   height: 15em;
   border-radius: 50%;
-}
-
-.projects {
-  display: table;
-  width: 100%;
-  height: 400px;
-  color: #fff;
-
-  background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url(yosemite.jpg) no-repeat center center scroll;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-.projects-item {
-    margin-bottom: 30px;
-    line-height: normal;
-    max-width: 50%;
-    margin: auto;
-    text-align: center;
 }
 
 .row {
@@ -468,11 +556,14 @@ hr.tiny {
 }
 
 
-@media (max-device-width: 480px) and (orientation: landscape) {
-
+@media (max-width: 480px) {
   .container-findings_summary > p {
     padding-left: 3em;
     padding-right: 3em;
+  }
+
+  .exp-item {
+    width: 100%;
   }
 
   .header {
@@ -490,7 +581,17 @@ hr.tiny {
   }
 }
 
+@media (max-width: 767px) {
+  .col {
+    width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
+  /*.col {
+    width: 100%;
+  }*/
+
   .container {
     width: 750px;
   }

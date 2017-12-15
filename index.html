@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>Laura Marsh Web</title>
+	<title>Laura Marsh Website</title>
 	<meta name="author" content="Laura Marsh">
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
@@ -11,31 +11,31 @@
 	<header class="header nav-fixed">
 		<nav class="nav">
 			<ul>
-				<li><a href="#About"> About </a></li>
-				<li><a href="#Education"> Education </a></li>
-				<li><a href="#Projects"> Projects </a></li>
-				<li><a href="#Contact"> Contact </a></li>
+				<li><strong><a href="#About"> about </a></strong></li>
+				<li><strong><a href="#Education"> education </a></strong></li>
+				<li><strong><a href="#Experience"> experience </a></strong></li>
+				<li><strong><a href="#Contact"> contact </a></strong></li>
 			</ul>
 		</nav>
 	</header>
 
-	<header class="home">
-		<div class="centered-vertical">
-			<h1>Laura Marsh</h1>
+	<section id="Home" class="home">
+		<div class="text-vertical-center">
+			<h1 class="title">Laura Marsh</h1>
 			<br>
 			<br>
-			<a href="#About" class="button">Get Started</a>
+			<a href="#About" class="button button-empty button-empty_one"><strong>about</strong></a>
+			<a href="#Education" class="button button-empty button-empty_two"><strong>education</strong></a>
+			<a href="#Experience" class="button button-empty button-empty_three"><strong>experience</strong></a>
+			<a href="#Contact" class="button button-empty button-empty_four"><strong>contact</strong></a>
 		</div>
-	</header>
-
-
-	<!-- rename centered?, -->
-
+		<!-- <div class="arrow"></div> -->
+	</section>
 
 	<section id="About" class="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-full centered">
+				<div class="col-full text-center">
 					<img class="profile" src="me2.jpg">
 					<h2>About me,</h2>
 					<p class="summary">
@@ -56,86 +56,157 @@
 	</section>
 
 	<section id="Education" class="education bg-orange">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-10 col-offset">
-					<h2>Education</h2>
-					<hr class="small">
-					<div class="row">
-						<div class="col-mid-third col-sml-third">
-              <div class="education-item">
-                <p><b>B.S. in Software Engineering</b><br><br>University of California, Irvine<br>June, 2018</p>
-              </div>
-            </div>
-            <div class="col-mid-third col-sml-third">
-              <div class="education-item">
-                <p>
-									<b>Relevant Courses:</b><br>
-									<br>Programming in Python, Java, C++
-									<br>Data Structures
-									<br>Algorithms Analysis
-									<br>Computer Networks
-									<br>Software Testing & QA
-									<br>Software Design & Implementation
-									<br>Intro to Product Management
-									<br>User interaction Software
-								</p>
-              </div>
-            </div>
-            <div class="col-mid-third col-sml-third">
-              <div class="education-item">
-                <p><b>Member of</b><br><br>Theta Tau<br>(a professional<br>engineering fraternity),<br>Computer Science Student Council</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+		<div class="ed-item ed-item_left">
+			<h1><strong>Education</strong></h1>
+			<h2>B.S. in Software Engineering</h2>
+			<h4>University of California, Irvine</h4>
+			<h4>October, 2014 &rarr; June, 2018</h4>
+		</div>
+		<div class="ed-item ed-item_right">
+			<p>
+				<b style="color:white;">Relevant Courses:</b><br>
+				<br>Programming in Python, Java, C++
+				<br>Data Structures
+				<br>Algorithms Analysis
+				<br>Computer Networks
+				<br>Software Testing & QA
+				<br>Software Design & Implementation
+				<br>Intro to Product Management
+				<br>User interaction Software
+			</p>
+		</div>
   </section>
 
-	<section id="Projects" class="projects">
-    <div class="centered-vertical">
+	<section id="Experience" class="exp">
+    <div class="col text-vertical-center">
 			<br>
-			<h2>Projects</h2>
-			<hr class="small">
-			<div class="projects-item">
-	      <h3>Kurzgesagt Landing Page</h3>
-				<h5>
-					<p>
-						<small>HTML, CSS, JS</small><br>
-						A small landing page I created for a Youtube series I adore called
-						‘Kurzgesagt’.  I used this page to practice programming with basic
-						Javascript and many popular web-design techniques and frameworks such as
-						mobile-first web-design, Bootstrap, and combining online templates.
-					</p>
-				</h5>
+			<div class="col-left">
+				<h2 class="col-left_title">Projects &larr;</h2>
+				<div class="exp-item">
+		      <h3>Kurzgesagt Landing Page</h3>
+					<img src="kurz.png">
+					<h5>
+						<p>
+							A small landing page I created for a Youtube series I adore called
+							‘Kurzgesagt’.  I used this page to practice programming with basic
+							Javascript and many popular web-design techniques and frameworks such as
+							mobile-first web-design, Bootstrap, and combining online templates.
+						</p>
+						<a href="https://github.com/lauramarsh/kurzgesagtLandingPage.git" class="button button-filled button-arrow">
+							&rarr;
+						</a>
+						<div class="text-vertical-center exp-left">
+							<p class="button button-filled_exp"><strong>HTML</strong></p>
+							<p class="button button-filled_exp"><strong>CSS</strong></p>
+							<p class="button button-filled_exp"><strong>JavaScript</strong></p>
+						</div>
+					</h5>
+				</div>
+				<div class="exp-item">
+		      <h3>Multithreaded Elevator Simulator</h3>
+					<h5>
+						<p>
+							A small project dedicated to understanding multi-threading in Java.
+							This program simulates 5 elevators (as threads) inside a building,
+							picking up and dropping off pedestrians on random input intervals.
+						</p>
+						<div class="text-vertical-center exp-left">
+							<p class="button button-filled_exp"><strong>Java</strong></p>
+						</div>
+					</h5>
+				</div>
+				<div class="exp-item">
+		      <h3>Mapquest Simulator</h3>
+					<h5>
+						<p>
+							A simple terminal-run program that displays information about a
+							journey  from input location A to input location B using the Open
+							MapQuest API.  The project displays  a trip's step-by-step directions
+							and total estimated duration, among other characteristics.  Inputs
+							are real-life destinations, and information outputted is realistic
+							and accurate to the MapQuest API.
+						</p>
+						<div class="text-vertical-center exp-left">
+							<p class="button button-filled_exp"><strong>Python</strong></p>
+						</div>
+					</h5>
+				</div>
 			</div>
-			<hr class="tiny">
-			<div class="projects-item">
-	      <h3>Multithreaded Elevator Simulator</h3>
-				<h5>
-					<p>
-						<small>JAVA</small><br>
-						A small project dedicated to understanding multi-threading in Java.
-						This program simulates 5 elevators (as threads) inside a building,
-						picking up and dropping off pedestrians on random input intervals.
-					</p>
-				</h5>
-			</div>
-			<hr class="tiny">
-			<div class="projects-item">
-	      <h3>Mapquest Simulator</h3>
-				<h5>
-					<p>
-						<small>PYTHON</small><br>
-						A simple terminal-run program that displays information about a
-						journey  from input location A to input location B using the Open
-						MapQuest API.  The project displays  a trip's step-by-step directions
-						and total estimated duration, among other characteristics.  Inputs
-						are real-life destinations, and information outputted is realistic
-						and accurate to the MapQuest API.
-					</p>
-				</h5>
+    </div>
+		<div class="col text-vertical-center">
+			<br>
+			<div class="col-right">
+				<h2 class="col-right_title">&rarr; Work</h2>
+				<div class="exp-item">
+		      <h3>Front End Web Dev Intern</h3>
+					<h4>TenantBase</h4>
+					<img src="tenantbase.png">
+					<h5>
+						<p>
+							I worked on Search Engine Optimization for tenantbase.com by
+							improving market pages to be more efficient/noticeable to the Google
+							crawler.  I familiarized myself with various web frameworks,
+							applied database queries, and caching practices in Python.
+						</p>
+						<a href="https://www.tenantbase.com/" class="button button-filled button-arrow">
+							&rarr;
+						</a>
+						<div class="text-vertical-center exp-right">
+							<p class="button button-filled_exp"><strong>Python</strong></p>
+							<p class="button button-filled_exp"><strong>HTML</strong></p>
+							<p class="button button-filled_exp"><strong>CSS</strong></p>
+							<p class="button button-filled_exp"><strong>JavaScript</strong></p>
+							<p class="button button-filled_exp"><strong>Django</strong></p>
+							<p class="button button-filled_exp"><strong>Sublime Text 2</strong></p>
+							<p class="button button-filled_exp"><strong>Git</strong></p>
+							<p class="button button-filled_exp"><strong>VirtualBox</strong></p>
+						</div>
+					</h5>
+				</div>
+				<div class="exp-item">
+		      <h3>Android OS Dev</h3>
+					<h4>Inwerks</h4>
+					<img class="exp-item_small" src="inwerks.png">
+					<h5>
+						<p>
+							<small>Java, Android Studio, Ubuntu</small><br>
+							I developed the Android OS version of the Inwerks application by
+							modifying & debugging existing code to correct previous errors,
+							upgrading the user interface, and improving overall look and performance.
+							I researched and used various outside APIs to enhance app functionality.
+						</p>
+						<div class="text-vertical-center exp-right">
+							<p class="button button-filled_exp"><strong>Java</strong></p>
+							<p class="button button-filled_exp"><strong>Android Studio</strong></p>
+							<p class="button button-filled_exp"><strong>Ubuntu</strong></p>
+						</div>
+					</h5>
+				</div>
+				<div class="exp-item">
+		      <h3>Firmware QA Intern</h3>
+					<h4>Dell/EMC DSSD</h4>
+					<img class="exp-item_small" src="dellemc.jpg">
+					<h5>
+						<p>
+							<small>Python, Sublime Text 2, Git, Raspberry Pi, Ubuntu</small><br>
+							I adapted existing programming to new hardware and improved overall
+							test performance by working closely with experienced team members.
+							I performed system-level testing and debugging to verify quality and
+							function, and researched  various testing techniques to ensure
+							product functionality.
+						</p>
+						<a href="https://www.dellemc.com/en-us/index.htm" class="button button-filled button-arrow">
+							&rarr;
+						</a>
+						<div class="text-vertical-center exp-right">
+							<p class="button button-filled_exp"><strong>Python</strong></p>
+							<p class="button button-filled_exp"><strong>Sublime Text 2</strong></p>
+							<p class="button button-filled_exp"><strong>Git</strong></p>
+							<p class="button button-filled_exp"><strong>Raspberry Pi</strong></p>
+							<p class="button button-filled_exp"><strong>Ubuntu</strong></p>
+						</div>
+					</h5>
+				</div>
 			</div>
     </div>
 	</section>
@@ -152,6 +223,7 @@
 		<div class="footer-left">
 			<h1>Laura Marsh</h1>
 			<h3>la.ly.marsh@gmail.com</h3>
+			<h3><a href="research.html">Personal Site Research</a></h3>
 		</div>
 	</footer>
 
@@ -166,6 +238,19 @@
 				}, 1000);
 			}
 		});
+
+		var scrolled = 400;
+		$(window).scroll(function() {
+		  if ( $(window).scrollTop() > scrolled ) {
+		    $('.header').fadeIn('slow');
+		  } else {
+		    $('.header').fadeOut('slow');
+		  }
+		});
+
+		// $('a.scrollToTop').click(function() {
+		//   $('html, body').animate({ scrollTop: 0 }, 700);
+		// });
 	</script>
 
 </body>

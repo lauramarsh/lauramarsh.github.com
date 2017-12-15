@@ -238,6 +238,19 @@
 				}, 1000);
 			}
 		});
+
+		var scrolled = 400;
+		$(window).scroll(function() {
+		  if ( $(window).scrollTop() > scrolled ) {
+		    $('.header').fadeIn('slow');
+		  } else {
+		    $('.header').fadeOut('slow');
+		  }
+		});
+
+		// $('a.scrollToTop').click(function() {
+		//   $('html, body').animate({ scrollTop: 0 }, 700);
+		// });
 	</script>
 
 </body>

@@ -424,7 +424,7 @@ body {
 
 .header {
   display: none;
-	background: rgba(255,255,255,.6);
+	background: rgba(255,255,255,.75);
 	color: #555f66;
 	cursor: default;
 	height: 3em;

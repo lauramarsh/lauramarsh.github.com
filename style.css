@@ -321,8 +321,13 @@ body {
   margin-left: 10px;
 }
 
-.exp-item > h3, h4 {
+.exp-item > h2, h4 {
   margin: 8px;
+}
+
+.exp-item > h4 {
+  font-size: 20px;
+  color: #D96D58;
 }
 
 .exp-item > h5 {
@@ -419,7 +424,7 @@ body {
 
 .header {
   display: none;
-	background: rgba(255,255,255,.4);
+	background: rgba(255,255,255,.75);
 	color: #555f66;
 	cursor: default;
 	height: 3em;

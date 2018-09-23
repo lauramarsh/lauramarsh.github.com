@@ -180,7 +180,7 @@ body {
 
 .footer {
   width: 100%;
-  background: url(peach.png);
+  background: url(peacho.png);
   text-align: center;
   padding-bottom: 15px;
 }
@@ -501,7 +501,7 @@ body {
 .title {
   width: 100%;
   height: 100%;
-  background: url(peach.png);
+  background: url(peacho.png);
 
   display: table;
 }
@@ -634,7 +634,7 @@ body {
 @media (min-width: 1200px) {
   .portrait {
     height: inherit;
-    background: url(me2.png);
+    background: url(me2o.png);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;

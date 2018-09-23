@@ -1,250 +1,444 @@
 <html>
 
 <head>
-	<title>Laura Marsh Website</title>
-	<meta name="author" content="Laura Marsh">
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Laura Marsh Portfolio Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-	<header class="header nav-fixed">
-		<nav class="nav">
-			<ul>
-				<li><strong><a href="#About"> about </a></strong></li>
-				<li><strong><a href="#Education"> education </a></strong></li>
-				<li><strong><a href="#Experience"> experience </a></strong></li>
-				<li><strong><a href="#Contact"> contact </a></strong></li>
-			</ul>
-		</nav>
-	</header>
+	<!-- referenced from https://erikterwan.com/ -->
+	<section class="nav">
+	  <div class="navbar">
+	    <input type="checkbox" />
+	    <span class="hamburger"></span>
+	    <span class="hamburger"></span>
+	    <span class="hamburger"></span>
 
-	<section id="Home" class="home">
-		<div class="text-vertical-center">
-			<h1 class="title">Laura Marsh</h1>
-			<br>
-			<br>
-			<a href="#About" class="button button-empty button-empty_one"><strong>about</strong></a>
-			<a href="#Education" class="button button-empty button-empty_two"><strong>education</strong></a>
-			<a href="#Experience" class="button button-empty button-empty_three"><strong>experience</strong></a>
-			<a href="#Contact" class="button button-empty button-empty_four"><strong>contact</strong></a>
-		</div>
-		<!-- <div class="arrow"></div> -->
+	    <ul class="navbar__elements">
+	      <a href="#title"><li>home</li></a>
+	      <a href="#background"><li>background</li></a>
+				<a href="#skills"><li>skills</li></a>
+	      <a href="#education"><li>education</li></a>
+				<a href="#experience"><li>experience</li></a>
+	      <a href="#contact"><li>contact</li></a>
+	    </ul>
+	  </div>
 	</section>
 
-	<section id="About" class="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-full text-center">
-					<img class="profile" src="me2.jpg">
-					<h2>About me,</h2>
-					<p class="summary">
-						I'm a starry eyed young programmer on a quest to apply all this
-						college-knowledge to more professional settings.  My short term goals
-						are to ably afford both a Netflix subscription and an Amazon Prime
-						account at the same time, but besides that I want to find a team/project
-						that excites me.  I currently have experience in front-end web
-						development, but I'm eager to see how I can expand my skillset. My
-						long term goals are to one day be a technically respected manager -
-						to work with people making products for people.
-					</p>
-					<a href="resume2018Jun.pdf" target="_blank" class="button button-filled">Resume</a>
-					<a href="mailto:la.ly.marsh@gmail.com" target="_top" class="button button-filled">Send Mail</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="Education" class="education bg-orange">
-		<div class="ed-item ed-item_left">
-			<h1><strong>Education</strong></h1>
-			<h2>B.S. in Software Engineering</h2>
-			<h4>University of California, Irvine</h4>
-			<h4>October, 2014 &rarr; June, 2018</h4>
-		</div>
-		<div class="ed-item ed-item_right">
-			<p>
-				<b style="color:white;">Relevant Courses:</b><br>
-				<br>Programming in Python, Java, C++
-				<br>Data Structures
-				<br>Algorithms Analysis
-				<br>Computer Networks
-				<br>Software Testing & QA
-				<br>Software Design & Implementation
-				<br>Intro to Product Management
-				<br>User interaction Software
-			</p>
-		</div>
-  </section>
-
-	<section id="Experience" class="exp">
-    <div class="col text-vertical-center">
-			<br>
-			<div class="col-left">
-				<h2 class="col-left_title">Projects &larr;</h2>
-				<div class="exp-item">
-		      <h2>Kurzgesagt Landing Page</h2>
-					<img src="kurz.png">
-					<h5>
-						<p>
-							A small landing page I created for a Youtube series I adore called
-							‘Kurzgesagt’.  I used this page to practice programming with basic
-							Javascript and many popular web-design techniques and frameworks such as
-							mobile-first web-design, Bootstrap, and combining online templates.
-						</p>
-						<a href="https://github.com/lauramarsh/kurzgesagtLandingPage.git" target="_blank" class="button button-filled button-arrow">
-							&rarr;
-						</a>
-						<div class="text-vertical-center exp-left">
-							<p class="button button-filled_exp"><strong>HTML</strong></p>
-							<p class="button button-filled_exp"><strong>CSS</strong></p>
-							<p class="button button-filled_exp"><strong>JavaScript</strong></p>
-						</div>
-					</h5>
-				</div>
-				<div class="exp-item">
-		      <h2>Multithreaded Elevator Simulator</h2>
-					<h5>
-						<p>
-							A small project dedicated to understanding multi-threading in Java.
-							This program simulates 5 elevators (as threads) inside a building,
-							picking up and dropping off pedestrians on random input intervals.
-						</p>
-						<div class="text-vertical-center exp-left">
-							<p class="button button-filled_exp"><strong>Java</strong></p>
-						</div>
-					</h5>
-				</div>
-				<div class="exp-item">
-		      <h2>Mapquest Simulator</h2>
-					<h5>
-						<p>
-							A simple terminal-run program that displays information about a
-							journey  from input location A to input location B using the Open
-							MapQuest API.  The project displays  a trip's step-by-step directions
-							and total estimated duration, among other characteristics.  Inputs
-							are real-life destinations, and information outputted is realistic
-							and accurate to the MapQuest API.
-						</p>
-						<div class="text-vertical-center exp-left">
-							<p class="button button-filled_exp"><strong>Python</strong></p>
-						</div>
-					</h5>
-				</div>
-			</div>
-    </div>
-		<div class="col text-vertical-center">
-			<br>
-			<div class="col-right">
-				<h2 class="col-right_title">&rarr; Work</h2>
-				<div class="exp-item">
-		      <h2>Front End Web Dev Intern</h2>
-					<h4>TenantBase</h4>
-					<img src="tenantbase.png">
-					<h5>
-						<p>
-							I worked on Search Engine Optimization for tenantbase.com by
-							improving market pages to be more efficient/noticeable to the Google
-							crawler.  I familiarized myself with various web frameworks,
-							applied database queries, and caching practices in Python.
-						</p>
-						<a href="https://www.tenantbase.com/" target="_blank" class="button button-filled button-arrow">
-							&rarr;
-						</a>
-						<div class="text-vertical-center exp-right">
-							<p class="button button-filled_exp"><strong>Python</strong></p>
-							<p class="button button-filled_exp"><strong>HTML</strong></p>
-							<p class="button button-filled_exp"><strong>CSS</strong></p>
-							<p class="button button-filled_exp"><strong>JavaScript</strong></p>
-							<p class="button button-filled_exp"><strong>Django</strong></p>
-							<p class="button button-filled_exp"><strong>Sublime Text 2</strong></p>
-							<p class="button button-filled_exp"><strong>Git</strong></p>
-							<p class="button button-filled_exp"><strong>VirtualBox</strong></p>
-						</div>
-					</h5>
-				</div>
-				<div class="exp-item">
-		      <h2>Android OS Dev</h2>
-					<h4>Inwerks</h4>
-					<img class="exp-item_small" src="inwerks.png">
-					<h5>
-						<p>
-							I developed the Android OS version of the Inwerks application by
-							modifying & debugging existing code to correct previous errors,
-							upgrading the user interface, and improving overall look and performance.
-							I researched and used various outside APIs to enhance app functionality.
-						</p>
-						<div class="text-vertical-center exp-right">
-							<p class="button button-filled_exp"><strong>Java</strong></p>
-							<p class="button button-filled_exp"><strong>Android Studio</strong></p>
-							<p class="button button-filled_exp"><strong>Ubuntu</strong></p>
-						</div>
-					</h5>
-				</div>
-				<div class="exp-item">
-		      <h2>Firmware QA Intern</h2>
-					<h4>Dell/EMC DSSD</h4>
-					<img class="exp-item_small" src="dellemc.jpg">
-					<h5>
-						<p>
-							<small>Python, Sublime Text 2, Git, Raspberry Pi, Ubuntu</small><br>
-							I adapted existing programming to new hardware and improved overall
-							test performance by working closely with experienced team members.
-							I performed system-level testing and debugging to verify quality and
-							function, and researched  various testing techniques to ensure
-							product functionality.
-						</p>
-						<a href="https://www.dellemc.com/en-us/index.htm" target="_blank" class="button button-filled button-arrow">
-							&rarr;
-						</a>
-						<div class="text-vertical-center exp-right">
-							<p class="button button-filled_exp"><strong>Python</strong></p>
-							<p class="button button-filled_exp"><strong>Sublime Text 2</strong></p>
-							<p class="button button-filled_exp"><strong>Git</strong></p>
-							<p class="button button-filled_exp"><strong>Raspberry Pi</strong></p>
-							<p class="button button-filled_exp"><strong>Ubuntu</strong></p>
-						</div>
-					</h5>
-				</div>
-			</div>
-    </div>
-	</section>
-
-	<footer id="Contact" class="footer">
-		<div class="footer-right">
-			<a href="https://www.linkedin.com/in/laura-marsh-78803688/" target="_blank" class="linkedin">
-				<img src="linkedin.png">
-			</a>
-			<a href="https://github.com/lauramarsh" target="_blank" class="github">
-				<img src="github.png">
-			</a>
-		</div>
-		<div class="footer-left">
+	<section id="title" class="title">
+		<div class="name">
+			<h4>Hello World! I'm</h4>
 			<h1>Laura Marsh</h1>
-			<h3>la.ly.marsh@gmail.com</h3>
-			<h3><a href="research.html">Personal Site Research</a></h3>
+			<h5>A front-end developer obsessed with user-facing technologies and experiences.</h5>
 		</div>
-	</footer>
+		<div class="ocean">
+		  <div class="ocean__wave"></div>
+		  <div class="ocean__wave"></div>
+		</div>
+	</section>
+
+	<section id="background" class="background">
+		<div class="portrait"></div>
+		<div class="profile__background"></div>
+		<div class="profile">
+				<h3>Nice to meet you!</h3>
+				<p class="profile__summary">
+					I'm a software developer currently located in northern California.
+					I recently graduated from <span style="font-size:1.15em;font-weight:bold;color:#C57B57">UC Irvine</span> with a B.S. in
+					<span style="font-size:1.15em;font-weight:bold;color:#C57B57">Software Engineering</span>, and I'm on the search for a full time position as a
+					developer. I've always been drawn to the
+					intersection between design and development.  The process of turning
+					creative ideas into tangible products fascinates me, and I have a passion
+					for the user experience!
+					I have experience in <span style="font-size:1.15em;font-weight:bold;color:#C57B57">front-end development</span> and a few project ventures
+					into full-stack development under my belt. A career goal of mine is to deepen my understanding of full-stack technologies
+					while maintaining my affinity for the front end. Right now, I'm excited
+					to explore my opportunities to work with the greatest in tech.
+					<span style="font-size:1.15em;font-weight:bold;color:#C57B57">When I'm not staring at a computer screen</span> you can find me outside,
+					hanging out with my dog, at a music festival, or swimming!
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<br>
+	<br>
+	<br>
+
+	<section class="resume">
+		<div id="skills" class="skills">
+			<h3>Skills</h3>
+			<a class="skills__resume container" href="LauraMarshResume18S.pdf" target="_blank">
+				<p class="skills__resume--link">View My Resume</p>
+				<img src="right-arrow.svg" class="skills__resume--link arrow arrow--animated">
+			</a>
+			<div class="skills__categories container">
+				<div class="skills__categories--sub">
+					<div class="skills__categories--block">
+						<h5 class="header--teal">LANGUAGES</h5>
+						<p>Python</p>
+						<p>Java</p>
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>JavaScript</p>
+						<p>SQL</p>
+						<p>PHP</p>
+						<p>JSP</p>
+						<p>JSON</p>
+					</div>
+					<div class="skills__categories--block">
+						<h5 class="header--teal">TOOLS</h5>
+						<p>Sublime Text 2</p>
+						<p>Eclipse</p>
+						<p>PyCharm</p>
+						<p>Android Studio</p>
+						<p>MySQL</p>
+						<p>GitHub</p>
+						<p>Linux/Unix</p>
+						<p>AWS EC2</p>
+						<p>Apache Tomcat</p>
+					</div>
+				</div>
+				<div class="skills__categories--sub">
+					<div class="skills__categories--block">
+						<h5 class="header--teal">FRAMEWORKS</h5>
+						<p>Django</p>
+						<p>Flask</p>
+						<p>AJAX</p>
+						<p>JQuery</p>
+						<p>React</p>
+						<p>REST</p>
+						<p>Bootstrap</p>
+					</div>
+					<div class="skills__categories--block">
+						<h5 class="header--teal">DESIGN</h5>
+						<p>Adbe Photoshop</p>
+						<p>Illustrator</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<br>
+
+		<div id="education" class="education">
+			<h3>Education</h3>
+			<div class="education__school container">
+				<p class="education__school--major">B.S. in Software Engineering</p>
+				<p class="education__school--name">University of California, Irvine</p>
+				<p class="education__school--date">2014 - Aug 2018</p>
+			</div>
+			<div class="education__courses container">
+				<h5 class="header--teal">RELAVENT COURSEWORK</h5>
+				<p>Programming in Python</p>
+				<p>Object-Oriented Programming</p>
+				<p>Data Structures & Analysis</p>
+				<p>Algorithms</p>
+				<p>Intro to Computer Networks</p>
+				<p>Software Design</p>
+				<p>Software Testing & Quality Assurance</p>
+				<p>Human Computer Interaction & UI Software</p>
+				<p>Data Management</p>
+				<p>Internet Apps Engineering</p>
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<br>
+
+		<div id="experience" class="experience">
+			<h3>Experience</h3>
+			<div class="collapsible__container">
+				<div class="collapsible">
+					<div class="collapsible__header experience--tenantbase">
+						<p>TENANTBASE</p>
+						<img src="down-arrow.svg" class="arrow arrow--expand"></img>
+					</div>
+					<div class="collapsible__content">
+						<p class="experience__position">Front End Engineering Intern</p>
+						<p class="experience__location">Irvine, CA</p>
+						<p class="experience__date">June 2017 - Sept 2017</p>
+						<p class="experience__desc">
+							Worked directly under the CTO to apply Search Engine Optimization
+							techniques to main search pages resulting in a leap in monthly site
+							viewers.  I was able to better understand many modern front-end
+							web development practices and had the oportunity to learn from some
+							amazing mentors.
+						</p>
+						<div class="technologies">
+							<h5 class="technologies__button">HTML/CSS</h5>
+							<h5 class="technologies__button">JAVASCRIPT</h5>
+							<h5 class="technologies__button">DJANGO</h5>
+							<h5 class="technologies__button">WAGTAIL</h5>
+							<h5 class="technologies__button">PYTHON</h5>
+							<h5 class="technologies__button">GIT</h5>
+							<h5 class="technologies__button">SUBL TEXT 2</h5>
+						</div>
+					</div>
+				</div>
+				<div class="collapsible">
+					<div class="collapsible__header experience--inwerks">
+						<p>INWERKS</p>
+						<img src="down-arrow.svg" class="arrow arrow--expand"></img>
+					</div>
+					<div class="collapsible__content">
+						<p class="experience__position">Android App Dev</p>
+						<p class="experience__location">Rancho Santa Margarita, CA</p>
+						<p class="experience__date">Dec 2016 - March 2017</p>
+						<p class="experience__desc">
+							Was the main Android os programmer for the inWerks application.  I
+							worked closely with a small team of mobile developers to enhance
+							and maintain the iphone and android apps.  I gained some exposure
+							to android mobile UI design and gradle, and had the chance to
+							learn and incorporate geocaching APIs.
+						</p>
+						<div class="technologies">
+							<h5 class="technologies__button">JAVA</h5>
+							<h5 class="technologies__button">ANDROID STUDIO</h5>
+							<h5 class="technologies__button">UBUNTU</h5>
+							<h5 class="technologies__button">GIT</h5>
+						</div>
+					</div>
+				</div>
+				<div class="collapsible">
+					<div class="collapsible__header experience--dellemc">
+						<p>DELL EMC</p>
+						<img src="down-arrow.svg" class="arrow arrow--expand"></img>
+					</div>
+					<div class="collapsible__content">
+						<p class="experience__position">Firmware QA Intern</p>
+						<p class="experience__location">Menlo Park, CA</p>
+						<p class="experience__date">June 2015 - Sept 2015</p>
+						<p class="experience__desc">
+							Joined a team of firmware engineers at DSSD, a startup within Dell
+							EMC, to perform QA analysis on their main product.  I gained experience in
+							test engineering by writing suites that would monitor basic firmware functionality.
+						</p>
+						<div class="technologies">
+							<h5 class="technologies__button">PYTHON</h5>
+							<h5 class="technologies__button">SUBL TEXT 2</h5>
+							<h5 class="technologies__button">RASPBERRY PI</h5>
+							<h5 class="technologies__button">GIT</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<br>
+
+		<div class="projects">
+			<h3>Projects</h3>
+			<div class="collapsible__container">
+				<div class="collapsible">
+					<div class="collapsible__header projects--capgroup">
+						<p style="font-size: .6em;">CAPITAL GROUP CAPSTONE</p>
+						<img src="down-arrow.svg" class="arrow arrow--expand"></img>
+					</div>
+					<div class="collapsible__content">
+						<p class="experience__desc">
+							Senior Capstone Project for my Software Engineering degree at UCI.
+							A small team and I partnered with Capital Group, an investment
+							banking firm, to create a microsite with some unique interactive
+							tools that would help inform a new demographic of visitors.  The site
+							includes a landing page where a flow of features would allow users
+							to better conceptualize investment banking, and ultimately give them
+							the ability to contact local Capital Group representatives.
+							Due to legal reasons, we are unable to keep the site deployed for
+							extended periods of time, but feel free to browse the git repository.
+						</p>
+						<div class="projects__link">
+							<a class="skills__resume" href="https://github.com/mattardel/cgui" target="_blank">
+								<p class="skills__resume--link">View on GitHub</p>
+								<img src="right-arrow.svg" class="skills__resume--link arrow arrow--animated">
+							</a>
+						</div>
+						<div class="technologies">
+							<h5 class="technologies__button">HTML</h5>
+							<h5 class="technologies__button">CSS/LESS</h5>
+							<h5 class="technologies__button">JAVASCRIPT</h5>
+							<h5 class="technologies__button">FLASK</h5>
+							<h5 class="technologies__button">PYTHON</h5>
+							<h5 class="technologies__button">GIT</h5>
+							<h5 class="technologies__button">PYCHARM</h5>
+						</div>
+					</div>
+				</div>
+				<div class="collapsible">
+					<div class="collapsible__header projects--fabflix">
+						<p>FABFLIX</p>
+						<img src="down-arrow.svg" class="arrow arrow--expand"></img>
+					</div>
+					<div class="collapsible__content">
+						<p class="experience__desc">
+							A full-stack web application created for an applied databases course.
+							I created a movie-browsing site where the user could search for and purchase
+							movies from databases populated with data gathered from IMDB.  From
+							this project I gained valuable exposure into many modern web development
+							practices, front-end and back-end.
+						</p>
+						<div class="projects__link">
+							<a class="skills__resume" href="https://github.com/lauramarsh/fabflix" target="_blank">
+								<p class="skills__resume--link">View on GitHub</p>
+								<img src="right-arrow.svg" class="skills__resume--link arrow arrow--animated">
+							</a>
+						</div>
+						<div class="technologies">
+							<h5 class="technologies__button">HTML/CSS</h5>
+							<h5 class="technologies__button">JAVASCRIPT</h5>
+							<h5 class="technologies__button">AJAX/JQUERY</h5>
+							<h5 class="technologies__button">SQL</h5>
+							<h5 class="technologies__button">JAVA</h5>
+							<h5 class="technologies__button">APACHE TOMCAT</h5>
+							<h5 class="technologies__button">AWS EC2</h5>
+							<h5 class="technologies__button">GIT</h5>
+							<h5 class="technologies__button">ECLIPSE</h5>
+						</div>
+					</div>
+				</div>
+				<div class="collapsible">
+					<div class="collapsible__header projects--vipster">
+						<p>VIPSTER</p>
+						<img src="down-arrow.svg" class="arrow arrow--expand"></img>
+					</div>
+					<div class="collapsible__content">
+						<p class="experience__desc">
+							A small RESTful eCommerce application that lists a variety of musical
+							artists' VIP concert packages.  The goal was to learn how to track
+							user activity throughout a session and accurately display REST-retrieved
+							information.
+						</p>
+						<div class="projects__link">
+							<a class="skills__resume" href="https://github.com/lauramarsh/VIPster" target="_blank">
+								<p class="skills__resume--link">View on GitHub</p>
+								<img src="right-arrow.svg" class="skills__resume--link arrow arrow--animated">
+							</a>
+						</div>
+						<div class="technologies">
+							<h5 class="technologies__button">HTML/CSS</h5>
+							<h5 class="technologies__button">JAVASCRIPT</h5>
+							<h5 class="technologies__button">AJAX/JQUERY</h5>
+							<h5 class="technologies__button">SQL</h5>
+							<h5 class="technologies__button">JAVA</h5>
+							<h5 class="technologies__button">PHP</h5>
+							<h5 class="technologies__button">JSP</h5>
+							<h5 class="technologies__button">APACHE TOMCAT</h5>
+							<h5 class="technologies__button">GIT</h5>
+							<h5 class="technologies__button">ECLIPSE</h5>
+						</div>
+					</div>
+				</div>
+				<div class="collapsible">
+					<div class="collapsible__header projects--kurzgesagt">
+						<p>KURZGESAGT</p>
+						<img src="down-arrow.svg" class="arrow arrow--expand"></img>
+					</div>
+					<div class="collapsible__content">
+						<p class="experience__desc">
+							Just for fun, I made a small landing page for a Youtube channel that I adore.
+							Kurzegesagt aims to explain big concepts to their viewers in easy-to-
+							understand ways.  I find their work both mentally and aesthetically
+							pleasing, so I used them as a conduit to explore front-end frameworks that
+							I was curious about.  Check them out here:
+							<a style="color: #9CAFB7;" href="https://kurzgesagt.org/">kurzgesagt.org</a>!
+						</p>
+						<div class="projects__link">
+							<a class="skills__resume" href="https://github.com/lauramarsh/kurzgesagtLandingPage" target="_blank">
+								<p class="skills__resume--link">View on GitHub</p>
+								<img src="right-arrow.svg" class="skills__resume--link arrow arrow--animated">
+							</a>
+						</div>
+						<div class="technologies">
+							<h5 class="technologies__button">HTML/CSS</h5>
+							<h5 class="technologies__button">JAVASCRIPT</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<br>
+
+	</section>
+
+	<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+	<section class="footer">
+		<p>@2018 LAURA MARSH</p>
+		<div id="contact" class="contact">
+			<a class="contact__button contact__button--email" href="mailto:lau.lyn.marsh@gmail.com" data-link="lau.lyn.marsh@gmail.com">
+				<img src="mail2.svg">
+			</a>
+			<a class="contact__button contact__button--linkedin" href="https://www.linkedin.com/in/laura-marsh-lm/" data-link="linkedin.com/in/laura-marsh-lm/">
+				<img src="linkedin.svg">
+			</a>
+			<a class="contact__button contact__button--github" href="https://github.com/lauramarsh" data-link="github.com/lauramarsh">
+				<img src="github2.svg">
+			</a>
+		</div>
+		<p class="contact__text">...</p>
+	</section>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
+
+		// for the delayed scrolling
 		$('a[href^="#"]').on('click', function(event) {
 			var target = $(this.getAttribute('href'));
 		  if( target.length ) {
 				event.preventDefault();
 		    $('html, body').stop().animate({
 					scrollTop: target.offset().top
-				}, 1000);
+				}, 500);
 			}
 		});
 
-		var scrolled = 400;
-		$(window).scroll(function() {
-		  if ( $(window).scrollTop() > scrolled ) {
-		    $('.header').fadeIn('slow');
-		  } else {
-		    $('.header').fadeOut('slow');
-		  }
+
+
+		// for the paralax scrolling
+		var background_image_parallax = function($object, multiplier){
+			multiplier = 1 - multiplier;
+		  var $doc = $(document);
+			$(window).scroll(function(){
+			  var from_top = $doc.scrollTop(),
+			      bg_css = '0px ' +(multiplier * from_top * -1) + 'px';
+						console.log(bg_css);
+			  $object.css({'background-position' : bg_css });
+		  });
+		};
+
+		background_image_parallax($('.portrait'), 0.8);
+
+		// for expanding collapsibles
+		var collapsibles = document.getElementsByClassName('collapsible__header');
+		var i;
+
+		for (i = 0; i < collapsibles.length; i++) {
+			collapsibles[i].addEventListener('click', function() {
+    		// this.classList.toggle("active"); FOR LATER ARROW MOVEMENT OR SUMTHIN
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+		      content.style.maxHeight = null;
+		    } else {
+					content.style.maxHeight = content.scrollHeight + 'px';
+		    }
+			});
+		}
+
+		// for contact hover text -- jquery
+		$(function () {
+	    $('.contact__button').hover(function (e) {
+	    	var text = $(this).data('link');
+	      $('.contact__text').html(text);
+	    });
 		});
 
 	</script>

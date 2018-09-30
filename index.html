@@ -415,7 +415,19 @@
 		  });
 		};
 
-		background_image_parallax($('.portrait'), 0.8);
+		function parallaxPermission(w) {
+	    if (w.matches) { // If media query matches
+	    	console.log("no parallax scrolling");
+	    } else {
+				background_image_parallax($('.portrait'), 0.8);
+	    }
+		}
+
+		var w = window.matchMedia("(max-width: 480px)")
+		parallaxPermission(w) // Call listener function at run time
+		w.addListener(parallaxPermission) // Attach listener function on state changes
+
+
 
 		// for expanding collapsibles
 		var collapsibles = document.getElementsByClassName('collapsible__header');

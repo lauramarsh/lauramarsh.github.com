@@ -62,7 +62,14 @@ body {
   background: #F3EADA;
   color: #251605;
   max-height: 0;
+}
+
+.collapsible__content--fast {
   transition: max-height .3s ease-out;
+}
+
+.collapsible__content--slow {
+  transition: max-height .6s ease-out;
 }
 
 .collapsible__header {
@@ -105,6 +112,10 @@ body {
 .contact__text {
   font-size: .85em;
   font-style: italic;
+}
+
+.demo {
+  display: none;
 }
 
 .education__school {
@@ -549,9 +560,24 @@ body {
     padding-right: 50px;
   }
 
+  .demo {
+    display: block;
+    position: relative;
+    margin: 0 35px 0 35px;
+  }
+
+  .demo__image {
+    width: 315px;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
   .resume {
-    padding-left: 75px;
-    padding-right: 75px;
+    width: 450px;
+    margin: auto;
   }
 }
 
@@ -560,6 +586,21 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
+  }
+
+  .demo {
+    display: block;
+    position: relative;
+    margin: 0 35px 0 35px;
+  }
+
+  .demo__image {
+    width: 450px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   .ocean__wave {

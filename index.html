@@ -41,33 +41,32 @@
 
 	<section id="background" class="background">
 		<div class="portrait"></div>
-		<div class="profile__background"></div>
-		<div class="profile">
-				<h3>Nice to meet you!</h3>
-				<p class="profile__summary">
-					I'm a software developer currently located in northern California.
-					I recently graduated from <span style="font-size:1.15em;font-weight:bold;color:#C57B57">UC Irvine</span> with a B.S. in
-					<span style="font-size:1.15em;font-weight:bold;color:#C57B57">Software Engineering</span>, and I'm on the search for a full time position as a
-					developer. I've always been drawn to the
-					intersection between design and development.  The process of turning
-					creative ideas into tangible products fascinates me, and I have a passion
-					for the user experience!
-					I have experience in <span style="font-size:1.15em;font-weight:bold;color:#C57B57">front-end development</span> and many project ventures
-					into <span style="font-size:1.15em;font-weight:bold;color:#C57B57">full-stack</span> development under my belt. A career goal of mine is to deepen my understanding of full-stack technologies
-					while maintaining my affinity for the front end. Right now, I'm excited
-					to explore my opportunities to work with the greatest in tech.
-					<span style="font-size:1.15em;font-weight:bold;color:#C57B57">When I'm not staring at a computer screen</span> you can find me outside,
-					hanging out with my dog, at a music festival, or swimming!
-				</p>
-			</div>
+		<!-- <div class="profile"> -->
+				<div class="profile profile__summary">
+					<h3>Nice to meet you!</h3>
+					<p>
+						I'm a software developer currently located in northern California.
+						I recently graduated from <span style="font-size:1.15em;font-weight:bold;color:#C57B57">UC Irvine</span> with a B.S. in
+						<span style="font-size:1.15em;font-weight:bold;color:#C57B57">Software Engineering</span>, and I'm on the search for a full time position as a
+						developer. I've always been drawn to the
+						intersection between design and development.  The process of turning
+						creative ideas into tangible products fascinates me, and I have a passion
+						for the user experience!
+						I have experience in <span style="font-size:1.15em;font-weight:bold;color:#C57B57">front-end development</span> and many project ventures
+						into <span style="font-size:1.15em;font-weight:bold;color:#C57B57">full-stack</span> development under my belt. A career goal of mine is to deepen my understanding of full-stack technologies
+						while maintaining my affinity for the front end. Right now, I'm excited
+						to explore my opportunities to work with the greatest in tech.
+						<span style="font-size:1.15em;font-weight:bold;color:#C57B57">When I'm not staring at a computer screen</span> you can find me outside,
+						hanging out with my dog, at a music festival, or swimming!
+					</p>
+				</div>
+			<!-- </div> -->
 		</div>
 	</section>
 
-	<br>
-	<br>
-	<br>
 
 	<section class="resume">
+		<br>
 		<div id="skills" class="skills">
 			<h3>Skills</h3>
 			<a class="skills__resume container" href="LauraMarshResume18S.pdf" target="_blank">
@@ -409,7 +408,7 @@
 		  var $doc = $(document);
 			$(window).scroll(function(){
 			  var from_top = $doc.scrollTop(),
-			      bg_css = '0px ' +(multiplier * from_top * -1) + 'px';
+			      bg_css = '0px ' + ((multiplier * from_top * -1) + 120) + 'px';
 						console.log(bg_css);
 			  $object.css({'background-position' : bg_css });
 		  });
@@ -419,7 +418,7 @@
 	    if (w.matches) { // If media query matches
 	    	console.log("no parallax scrolling");
 	    } else {
-				background_image_parallax($('.portrait'), 0.8);
+				background_image_parallax($('.portrait'), 0.85);
 	    }
 		}
 

@@ -351,13 +351,12 @@ body {
   padding-right: 15px;
   background-color: #233d69;
   /* background: linear-gradient(#011f4b, #e7eff6); */
-  box-shadow: 0 -10px 10px -9px #233d69;
 }
 
 .profile__portrait {
   width: 100%;
   height: 50%;
-  border-radius: 500px;
+  border-radius: 100%;
   background: url(static/me.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -480,7 +479,6 @@ body {
   /* background: linear-gradient(to top, #233d69 10%, #011f4b 61%); */
   display: table;
   position: relative;
-  box-shadow: 0 0 10px 1px #233d69;
   z-index: 2;
 }
 
@@ -507,8 +505,8 @@ body {
   }
 
   .profile__portrait {
-    width: 100%;
-    height: 45%;
+    width: 350px;
+    height: 350px;
   }
 
   .demo {
@@ -555,20 +553,14 @@ body {
   }
 
   .profile {
-    /* position: absolute; */
-    /* top: 20%; */
-    /* right: 0; */
-    /* height: 55%; */
-    /* padding-left: 15px; */
     padding-right: 15px;
     margin-bottom: 10%;
-    box-shadow: 0 0 13px 2px #233d69;
     border-radius: 3px;
   }
 
   .profile__portrait {
-    width: 60%;
-    height: 45%;
+    width: 400px;
+    height: 400px;
     background: url(static/me2o.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -578,7 +570,6 @@ body {
   .resume {
     width: 600px;
     margin: auto;
-    box-shadow: 0 -10px 10px -8px #233d69;
     position: relative;
     z-index: 2;
   }
@@ -605,7 +596,6 @@ body {
     /* padding-left: 15px; */
     padding-right: 15px;
     margin-bottom: 5%;
-    box-shadow: 0 0 13px 2px #233d69;
     border-radius: 3px;
   }
 

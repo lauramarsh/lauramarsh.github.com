@@ -399,6 +399,7 @@ ul {
     ),
     url(static/capitalgroup.png);
   background-size: cover;
+  font-size: 1.5em;
 }
 
 .projects--fabflix {
@@ -613,6 +614,17 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     pointer-events: none;
+  }
+
+  .projects--capgroup {
+    background:
+      linear-gradient(
+        rgba(173,203,227, 0.75),
+        rgba(173,203,227, 0.75)
+      ),
+      url(static/capitalgroup.png);
+    background-size: cover;
+    font-size: 2em;
   }
 
   .resume {

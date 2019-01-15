@@ -353,7 +353,10 @@ ul {
   text-decoration: none;
   color: #f0a173;
 
+  -webkit-transition: color 0.3s ease;
+  -webkit-transition: letter-spacing 0.3s ease;
   transition: color 0.3s ease;
+  transition: letter-spacing 0.3s ease;
 }
 
 .navbar__elements > a > li {
@@ -546,25 +549,12 @@ ul {
     filter: invert(0.5) sepia(1) saturate(5);
   }
 
-  /* .demo {
-    display: block;
-    position: relative;
-    margin: 0 60px 0 60px;
+  .navbar__elements > a:hover {
+    color: #005b96;
+    letter-spacing: .15em;
   }
 
-  .demo__image {
-    width: 315px;
-    position: absolute;
-    top: 45px;
-    left: 0;
-    right: 0;
-    margin: auto;
-  } */
-
   .profile {
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* padding-left: 50px; */
     padding-right: 50px;
   }
 

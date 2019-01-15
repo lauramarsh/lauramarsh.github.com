@@ -9,7 +9,7 @@
 }
 
 body {
-  background: linear-gradient(to top, #4b86b4, #233d69 15%);
+  background: linear-gradient(to top, #4b86b4, #233d69 0%);
   background-color: #4b86b4;
   font-family: 'Montserrat', sans-serif;
   /*font-family: 'Source Sans Pro', sans-serif;*/
@@ -19,6 +19,16 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 
 /* for mobile #mobile-first */
@@ -36,7 +46,7 @@ body {
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .background {
@@ -53,6 +63,14 @@ body {
   width: 100%;
   vertical-align: middle;
   overflow: hidden;
+}
+
+.collapsible__container > li:first-child > div:first-child {
+  border-radius: 15px 15px 0 0;
+}
+
+.collapsible__container > li:last-child > div:first-child {
+  border-radius: 0 0 15px 15px;
 }
 
 .collapsible__content {
@@ -349,7 +367,6 @@ body {
   /* bottom: 0; */
   /* padding-left: 15px; */
   padding-right: 15px;
-  background-color: #233d69;
   /* background: linear-gradient(#011f4b, #e7eff6); */
 }
 
@@ -497,19 +514,38 @@ body {
 /* for large phone/small tablet */
 
 @media (min-width: 480px) {
-  .profile {
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* padding-left: 50px; */
-    padding-right: 50px;
+  .arrow--rotate {
+    transform: rotate(-180deg);
   }
 
-  .profile__portrait {
-    width: 350px;
-    height: 350px;
+  .arrow--rotate-back {
+    transform: rotate(0deg);
   }
 
-  .demo {
+  .collapsible__container {
+    overflow: visible;
+  }
+
+  .collapsible__header, .collapsible__header > p, .collapsible__header > img {
+    -webkit-transition: .3s; /* Safari */
+    transition: .3s;
+  }
+
+  .collapsible__header:hover {
+    background-image: linear-gradient(#e7eff6, #e7eff6);
+    margin: 0 -10px;
+  }
+
+  .collapsible__header:hover > p {
+    color: #f0a173;
+  }
+
+  .collapsible__header:hover > img {
+    -webkit-filter: invert(0.5) sepia(1) saturate(5);
+    filter: invert(0.5) sepia(1) saturate(5);
+  }
+
+  /* .demo {
     display: block;
     position: relative;
     margin: 0 60px 0 60px;
@@ -522,6 +558,18 @@ body {
     left: 0;
     right: 0;
     margin: auto;
+  } */
+
+  .profile {
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* padding-left: 50px; */
+    padding-right: 50px;
+  }
+
+  .profile__portrait {
+    width: 350px;
+    height: 350px;
   }
 
   .resume {

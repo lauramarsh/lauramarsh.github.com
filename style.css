@@ -182,7 +182,7 @@ ul {
       rgba(173,203,227, 0.9),
       rgba(173,203,227, 0.9)
     ),
-    url(static/dssd.jpg);
+    url(static/dssdCard.jpg);
   background-size: cover;
 }
 
@@ -192,7 +192,7 @@ ul {
       rgba(173,203,227, 0.9),
       rgba(173,203,227, 0.9)
     ),
-    url(static/inwerks.jpeg);
+    url(static/inwerksCard.jpeg);
   background-size: cover;
 }
 
@@ -202,7 +202,7 @@ ul {
       rgba(173,203,227, 0.9),
       rgba(173,203,227, 0.9)
     ),
-    url(static/tenantbase.png);
+    url(static/tenantbaseCard.png);
   background-size: cover;
 }
 
@@ -400,7 +400,7 @@ ul {
       rgba(173,203,227, 0.75),
       rgba(173,203,227, 0.75)
     ),
-    url(static/capitalgroup.png);
+    url(static/capitalgroupCard.png);
   background-size: cover;
   font-size: 1.5em;
 }
@@ -411,7 +411,7 @@ ul {
       rgba(173,203,227, 0.75),
       rgba(173,203,227, 0.75)
     ),
-    url(static/fabflix.png);
+    url(static/fabflixCard.png);
   background-size: cover;
 }
 
@@ -421,7 +421,17 @@ ul {
       rgba(173,203,227, 0.75),
       rgba(173,203,227, 0.75)
     ),
-    url(static/kurz.png);
+    url(static/kurzCard.png);
+  background-size: cover;
+}
+
+.projects--palettes {
+  background:
+    linear-gradient(
+      rgba(173,203,227, 0.75),
+      rgba(173,203,227, 0.75)
+    ),
+    url(static/palettesCard.png);
   background-size: cover;
 }
 
@@ -431,7 +441,7 @@ ul {
       rgba(173,203,227, 0.75),
       rgba(173,203,227, 0.75)
     ),
-    url(static/vipster.png);
+    url(static/vipsterCard.png);
   background-size: cover;
 }
 
@@ -584,11 +594,20 @@ ul {
 
   .demo__image {
     width: 410px;
+    height: 225px;
     position: absolute;
     top: 55px;
     left: 0;
     right: 0;
     margin: auto;
+  }
+
+  .demo__image--scroll {
+    overflow-y: scroll;
+  }
+
+  .demo__image > img {
+    width: 100%;
   }
 
   .profile {

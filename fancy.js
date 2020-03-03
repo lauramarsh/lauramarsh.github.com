@@ -8,16 +8,16 @@ const titleText = [
 
 setTimeout(() => {
   typeWriter("line-1", titleText[0]);
-}, 1500);
+}, 1300);
 setTimeout(() => {
   typeWriter("line-2", titleText[1]);
-}, 2700);
+}, 2500);
 setTimeout(() => {
   typeWriter("line-3", titleText[2]);
-}, 5000);
+}, 4800);
 setTimeout(() => {
   typeWriter("line-4", titleText[3]);
-}, 9500);
+}, 9300);
 
 function typeWriter(id, text) {
   const line = $(`#${id}`);
@@ -25,7 +25,7 @@ function typeWriter(id, text) {
     line.text(line.text() + text[0]);
     setTimeout(
       () => typeWriter(id, text.substring(1)),
-      id === "line-1" ? 200 : 80
+      id === "line-1" ? 175 : 70
     );
   } else {
     if (parseInt(id.slice(-1)) !== titleText.length) {
@@ -41,17 +41,41 @@ function typeWriter(id, text) {
 let lastScrollTop = 0;
 const sectionOrder = ["title", "about"];
 
-$(document).ready(function() {
-  $(document).scroll(function() {
-    console.log("insideee");
-    let st = $(this).scrollTop();
-    if (st > lastScrollTop) {
-      // downscroll code
-      console.log("DOWNNNNN");
-    } else {
-      // upscroll code
-      console.log("UPPPPPPP");
+const fadeUp = jqObj => {
+  jqObj.addClass("container--fade-up");
+}
+
+
+const switchSection = (event, current) => {
+  const currentIdx = sectionOrder.indexOf(current);
+  const currentSect = $(`#${current}`);
+  let destinationIdx;
+  let nextSect;
+
+  if (event.deltaY < 0) {
+    // currently scrolling up
+    destinationIdx = currentIdx - 1;
+    if (destinationIdx > -1) {
+      nextSect = $(`#${sectionOrder[destinationIdx]}`);
+      currentSect.children("div").addClass("pushed-down fade-out");
+      setTimeout(() => {
+        currentSect.children("div").removeClass("pushed-down fade-out");
+        currentSect.addClass("removed")
+        nextSect.removeClass("removed");
+      }, 300);
+    } 
+  } else if (event.deltaY > 0) {
+    // currently scrolling down
+    destinationIdx = currentIdx + 1;
+    if (destinationIdx < sectionOrder.length) {
+      nextSect = $(`#${sectionOrder[destinationIdx]}`);
+      currentSect.children("div").addClass("pushed-up fade-out");
+      setTimeout(() => {
+        currentSect.children("div").removeClass("pushed-up fade-out");
+        currentSect.addClass("removed")
+        nextSect.removeClass("removed");
+      }, 300);
     }
-    lastScrollTop = st;
-  });
-});
+  }
+
+};

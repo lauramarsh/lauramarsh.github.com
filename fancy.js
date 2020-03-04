@@ -46,7 +46,7 @@ const fadeUp = jqObj => {
 }
 
 
-const switchSection = (event, current) => {
+const switchTo = (event, current) => {
   const currentIdx = sectionOrder.indexOf(current);
   const currentSect = $(`#${current}`);
   let destinationIdx;
@@ -58,10 +58,18 @@ const switchSection = (event, current) => {
     if (destinationIdx > -1) {
       nextSect = $(`#${sectionOrder[destinationIdx]}`);
       currentSect.children("div").addClass("pushed-down fade-out");
+      if (destinationIdx === 0) {
+        $("#navigation").addClass("pushed-down fade-out");
+      }
       setTimeout(() => {
         currentSect.children("div").removeClass("pushed-down fade-out");
         currentSect.addClass("removed")
         nextSect.removeClass("removed");
+
+        if (destinationIdx === 0) {
+          $("#contents").addClass("removed");
+          $("#navigation").removeClass("pushed-down fade-out");
+        }
       }, 300);
     } 
   } else if (event.deltaY > 0) {
@@ -70,12 +78,26 @@ const switchSection = (event, current) => {
     if (destinationIdx < sectionOrder.length) {
       nextSect = $(`#${sectionOrder[destinationIdx]}`);
       currentSect.children("div").addClass("pushed-up fade-out");
+      if (destinationIdx === 0) {
+        $("#navigation").addClass("pushed-up fade-out");
+      }
       setTimeout(() => {
         currentSect.children("div").removeClass("pushed-up fade-out");
         currentSect.addClass("removed")
         nextSect.removeClass("removed");
+
+        if (destinationIdx === 1) {
+          $("#contents").removeClass("removed");
+          $("#navigation").removeClass("pushed-up fade-out");
+        }
       }, 300);
     }
   }
 
 };
+
+
+const navigateTo = (destination) => {
+  const destSect = $(`#${destination}`);
+  const allSects = $("#content").children("div");
+}

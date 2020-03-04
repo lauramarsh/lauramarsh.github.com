@@ -99,7 +99,7 @@ body {
 .quicklinks__link:hover {
   filter: sepia(100%) hue-rotate(-40deg);
   cursor: pointer;
-  transition: .25s ease-in-out;
+  transition: 300ms ease;
 }
 
 .quicklinks__link img {
@@ -142,6 +142,32 @@ body {
   animation-name:blink;
   animation-duration:0.5s;
   animation-iteration-count: infinite;
+}
+
+.navigation {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__link {
+  font-size: 12px;
+}
+
+.navigation__link:hover {
+  cursor: pointer;
+  color: var(--coral);
+
+  transition: 300ms ease;
+}
+
+.about__blurbs {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 10px;
+  text-align: justify;
 }
 
 @keyframes blink {

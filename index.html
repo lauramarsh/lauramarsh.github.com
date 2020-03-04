@@ -34,11 +34,7 @@
         <img src="static/email.svg" />
       </a>
     </div>
-    <div
-      class="title container"
-      id="title"
-      onwheel="switchTo(event, 'title')"
-    >
+    <div class="title container" id="title" onwheel="switchFrom(event, 'title')">
       <div class="title__lines">
         <div class="title__line">
           <p id="line-1-ds">$</p>
@@ -60,40 +56,48 @@
     </div>
 
     <div class="contents container removed" id="contents">
-      <nav class="navigation" id="navigation">
-        <div onclick="navigateTo('about')" class="navigation__link">about</div>
-        <div onclick="navigateTo('skills')" class="navigation__link">skills</div>
-        <div onclick="navigateTo('projects')" class="navigation__link">projects</div>
-        <div onclick="navigateTo('experience')" class="navigation__link">experience</div>
+      <nav class="navigation side-space top-space" id="navigation">
+        <div onclick="navigateTo(event, 'about')" class="navigation__link navigation__link--activated">
+          about
+        </div>
+        <div class="navigation__divider"></div>
+        <div onclick="navigateTo(event, 'skills')" class="navigation__link">
+          skills
+        </div>
+        <div class="navigation__divider"></div>
+        <div onclick="navigateTo(event, 'projects')" class="navigation__link">
+          projects
+        </div>
+        <div class="navigation__divider"></div>
+        <div onclick="navigateTo(event, 'experience')" class="navigation__link">
+          experience
+        </div>
       </nav>
-
-      <div
-        class="about container removed"
-        id="about"
-        onwheel="switchTo(event, 'about')"
-      >
-        <div class="about__blurbs">
-          <p>
-            Hey! Nice to meet you. I'm a front end engineer living in Los
-            Angeles, CA. I've had a bunch of small career opportunities
-            exploring other parts of the stack, but I've definitely found my
-            home with ui and ux engineering. I love organizing, modularizing,
-            and I think there's a lot of value in spending a little time to
-            think of solutions to new problems thoughtfully. Recently I've taken
-            joy in catapulting old-school codebases into the future. I've got a
-            little over 1 year of experience out of college and am always
-            looking for new opportunities to learn & grow!
+      <div class="about removed" id="about" onwheel="switchFrom(event, 'about')">
+        <div class="about__blurbs side-space">
+          <p class="top-space">
+            I'm a front end engineer living in Los Angeles, CA. 
+            I really like front end design & development - I
+            love colors, modularizing, scalable/reusable components, and I think
+            a lot of progress can be achieved by spending a little bit of time
+            problem-solving thoughtfully. I'm always looking for new
+            opportunities to learn new techs, better practices, and catapult old-school codebases
+            into the future!
           </p>
           <p>
-            Right now, my goals are to become a front-end god, a mobile god, and
-            a testing god. 👌
+            My current goals are to become a commander of front-end and mobile
+            development (and to give my amazing dog the life she
+            <i>deserves</i> 🙏). Right now, I'm working on a cool new mobile app
+            that'll help people organize their pantries and grocery lists more
+            efficiently. Shoot me a message, I'd love to chat!
           </p>
-          <p>
-            Blasphemy aside, I'm currently contributing to (at least) one of
-            these goals by developing a cool new mobile app that'll help people
-            organize their pantries and grocery lists more efficiently. Shoot me
-            a message thru email or LinkedIn, I'd love to chat!
-          </p>
+        </div>
+      </div>
+      <div class="skills removed" id="skills" onwheel="switchFrom(event, 'skills')">
+        <div class="top-space side-space skills__list">
+          <div class="skills__skill">
+            
+          </div>
         </div>
       </div>
     </div>

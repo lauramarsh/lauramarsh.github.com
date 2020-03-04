@@ -46,7 +46,7 @@ const fadeUp = jqObj => {
 }
 
 
-const switchTo = (event, current) => {
+const switchFrom = (event, current) => {
   const currentIdx = sectionOrder.indexOf(current);
   const currentSect = $(`#${current}`);
   let destinationIdx;
@@ -97,7 +97,9 @@ const switchTo = (event, current) => {
 };
 
 
-const navigateTo = (destination) => {
-  const destSect = $(`#${destination}`);
-  const allSects = $("#content").children("div");
+const navigateTo = (event, destination) => {
+  $("#contents > div").addClass("removed");
+  $("#navigation > .navigation__link").removeClass("navigation__link--activated");
+  $(`#${destination}`).removeClass("removed");
+  $(event.target).addClass("navigation__link--activated");
 }

@@ -53,8 +53,8 @@ body {
 }
 
 .fade-in {
-  animation: fadein 300ms;
-  transition: all 300ms ease-in;
+  animation: fadein 800ms;
+  transition: all 800ms ease-in;
 }
 
 .pushed-up {
@@ -71,18 +71,6 @@ body {
   width: 100vw;
   height: calc(100vh - 2rem);
   overflow: hidden;
-}
-
-.container--fade-up {
-  animation: fadein 800ms;
-  /* transform: translate(0px, -10%); */
-  transition: all 1s ease-out;
-}
-
-.container--fade-down {
-  animation: fadein 800ms;
-  /* transform: translate(0px, 10%); */
-  transition: all 1s ease-out;
 }
 
 /* Mobile first shtuff */
@@ -142,6 +130,13 @@ body {
   animation-name:blink;
   animation-duration:0.5s;
   animation-iteration-count: infinite;
+}
+
+.about__blurbs {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 10px;
+  text-align: justify;
 }
 
 @keyframes blink {

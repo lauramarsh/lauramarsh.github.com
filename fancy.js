@@ -62,6 +62,10 @@ const switchSection = (event, current) => {
         currentSect.children("div").removeClass("pushed-down fade-out");
         currentSect.addClass("removed")
         nextSect.removeClass("removed");
+        // extra for jump between title and contents
+        if (currentIdx === 1) {
+          $("#contents").addClass("removed");
+        }
       }, 300);
     } 
   } else if (event.deltaY > 0) {
@@ -74,6 +78,10 @@ const switchSection = (event, current) => {
         currentSect.children("div").removeClass("pushed-up fade-out");
         currentSect.addClass("removed")
         nextSect.removeClass("removed");
+        // extra for jump between title and contents
+        if (currentIdx === 0) {
+          $("#contents").removeClass("removed");
+        }
       }, 300);
     }
   }

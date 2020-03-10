@@ -39,13 +39,12 @@ function typeWriter(id, text) {
 // plenty o' event listeners for the scroll behavior
 //  on scroll down, things are supposed to switch in line
 let lastScrollTop = 0;
-const sectionOrder = ["title", "about"];
+const sectionOrder = ["title", "about", "skills", "projects"];
 
 const fadeUp = jqObj => {
   jqObj.addClass("container--fade-up");
 }
-
-
+ 
 const switchFrom = (event, current) => {
   const currentIdx = sectionOrder.indexOf(current);
   const currentSect = $(`#${current}`);
@@ -94,12 +93,20 @@ const switchFrom = (event, current) => {
     }
   }
 
+  if (nextSect) {
+    highlightNavLink($(`#nav-${sectionOrder[destinationIdx]}`));
+  }
 };
 
 
-const navigateTo = (event, destination) => {
-  $("#contents > div").addClass("removed");
+const highlightNavLink = (target) => {
   $("#navigation > .navigation__link").removeClass("navigation__link--activated");
+  $(target).addClass("navigation__link--activated");
+}
+
+
+const navigateTo = (event, destination) => {
+  $("#contents > div").addClass("removed")
   $(`#${destination}`).removeClass("removed");
-  $(event.target).addClass("navigation__link--activated");
+  highlightNavLink(event.target);
 }

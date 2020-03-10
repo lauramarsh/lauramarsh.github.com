@@ -34,7 +34,11 @@
         <img src="static/email.svg" />
       </a>
     </div>
-    <div class="title container" id="title" onwheel="switchFrom(event, 'title')">
+    <div
+      class="title container"
+      id="title"
+      onwheel="switchFrom(event, 'title')"
+    >
       <div class="title__lines">
         <div class="title__line">
           <p id="line-1-ds">$</p>
@@ -57,48 +61,147 @@
 
     <div class="contents container removed" id="contents">
       <nav class="navigation side-space top-space" id="navigation">
-        <div onclick="navigateTo(event, 'about')" class="navigation__link navigation__link--activated">
+        <div
+          id="nav-about"
+          onclick="navigateTo(event, 'about')"
+          class="navigation__link navigation__link--activated"
+        >
           about
         </div>
         <div class="navigation__divider"></div>
-        <div onclick="navigateTo(event, 'skills')" class="navigation__link">
+        <div
+          id="nav-skills"
+          onclick="navigateTo(event, 'skills')"
+          class="navigation__link"
+        >
           skills
         </div>
         <div class="navigation__divider"></div>
-        <div onclick="navigateTo(event, 'projects')" class="navigation__link">
+        <div
+          id="nav-projects"
+          onclick="navigateTo(event, 'projects')"
+          class="navigation__link"
+        >
           projects
         </div>
         <div class="navigation__divider"></div>
-        <div onclick="navigateTo(event, 'experience')" class="navigation__link">
+        <div
+          id="nav-experience"
+          onclick="navigateTo(event, 'experience')"
+          class="navigation__link"
+        >
           experience
         </div>
       </nav>
-      <div class="about removed" id="about" onwheel="switchFrom(event, 'about')">
+      <div
+        class="about removed"
+        id="about"
+        onwheel="switchFrom(event, 'about')"
+      >
         <div class="about__blurbs side-space">
           <p class="top-space">
-            I'm a front end engineer living in Los Angeles, CA. 
-            I really like front end design & development - I
-            love colors, modularizing, scalable/reusable components, and I think
-            a lot of progress can be achieved by spending a little bit of time
-            problem-solving thoughtfully. I'm always looking for new
-            opportunities to learn new techs, better practices, and catapult old-school codebases
-            into the future!
+            I'm a front end engineer living in Los Angeles, CA. I really like UI
+            development & design - I love colors, modularizing,
+            scalable/reusable components, and I think a lot of progress can be
+            achieved by spending a little bit of time problem-solving
+            thoughtfully. I'm always looking for new opportunities to learn new
+            techs, better practices, and catapult old-school codebases into the
+            future!
           </p>
           <p>
             My current goals are to become a commander of front-end and mobile
             development (and to give my amazing dog the life she
-            <i>deserves</i> 🙏). Right now, I'm working on a cool new mobile app
-            that'll help people organize their pantries and grocery lists more
-            efficiently. Shoot me a message, I'd love to chat!
+            <i>deserves</i> 🙏). Shoot me an email or connect on LinkedIn, I'd
+            love to chat!
           </p>
         </div>
       </div>
-      <div class="skills removed" id="skills" onwheel="switchFrom(event, 'skills')">
+      <div
+        class="skills container--inner removed"
+        id="skills"
+        onwheel="switchFrom(event, 'skills')"
+      >
         <div class="top-space side-space skills__list">
           <div class="skills__skill">
-            
+            <div>
+              <img src="static/skills/html5.svg" alt="html5" />
+              <p>html5</p>
+            </div>
+          </div>
+          <div class="skills__skill">
+            <div>
+              <img src="static/skills/css3.svg" alt="css3" />
+              <p>css3</p>
+            </div>
+          </div>
+          <div class="skills__skill">
+            <div>
+              <img src="static/skills/javascript.svg" alt="javascript" />
+              <p>javascript</p>
+            </div>
+          </div>
+          <div class="skills__skill">
+            <div>
+              <img src="static/skills/react.svg" alt="react" />
+              <p>react</p>
+            </div>
+          </div>
+          <div class="skills__skill">
+            <div>
+              <img src="static/skills/redux.svg" alt="redux" />
+              <p>redux</p>
+            </div>
+          </div>
+          <div class="skills__skill">
+            <div>
+              <img src="static/skills/feathers.svg" alt="feathers" />
+              <p>feathers</p>
+            </div>
+          </div>
+          <div class="skills__skill">
+            <div>
+              <img src="static/skills/sass.svg" alt="sass" />
+              <p>sass</p>
+            </div>
+          </div>
+          <div class="skills__skill">
+            <div>
+              <img src="static/skills/json.svg" alt="json" />
+              <p>json</p>
+            </div>
+          </div>
+          <div class="skills__skill">
+            <div>
+              <img src="static/skills/sql.svg" alt="sql" />
+              <p>sql</p>
+            </div>
+          </div>
+          <div class="skills__skill">
+            <div>
+              <img src="static/skills/python.svg" alt="python" />
+              <p>python</p>
+            </div>
+          </div>
+          <div class="skills__skill">
+            <div>
+              <img src="static/skills/django.svg" alt="django" />
+              <p>django</p>
+            </div>
+          </div>
+          <div class="skills__skill">
+            <div>
+              <img src="static/skills/git.svg" alt="git" />
+              <p>git</p>
+            </div>
           </div>
         </div>
+      </div>
+      <div
+        class="projects removed"
+        id="projects"
+        onwheel="switchFrom(event, 'projects')"
+      >
+        
       </div>
     </div>
 

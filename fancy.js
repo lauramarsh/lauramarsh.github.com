@@ -3,7 +3,7 @@ const titleText = [
   " hi",
   " my name is Laura ~",
   " i'm a software & ui engineer!",
-  " scroll down :)"
+  " scroll down to learn more :)"
 ];
 
 setTimeout(() => {
@@ -17,7 +17,7 @@ setTimeout(() => {
 }, 4800);
 setTimeout(() => {
   typeWriter("line-4", titleText[3]);
-}, 9300);
+}, 8700);
 
 function typeWriter(id, text) {
   const line = $(`#${id}`);

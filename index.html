@@ -78,19 +78,19 @@
         </div>
         <div class="navigation__divider"></div>
         <div
-          id="nav-projects"
-          onclick="navigateTo(event, 'projects')"
-          class="navigation__link"
-        >
-          projects
-        </div>
-        <div class="navigation__divider"></div>
-        <div
           id="nav-experience"
           onclick="navigateTo(event, 'experience')"
           class="navigation__link"
         >
           experience
+        </div>
+        <div class="navigation__divider"></div>
+        <div
+          id="nav-projects"
+          onclick="navigateTo(event, 'projects')"
+          class="navigation__link"
+        >
+          projects
         </div>
       </nav>
       <div
@@ -122,73 +122,73 @@
         onwheel="switchFrom(event, 'skills')"
       >
         <div class="top-space side-space skills__list">
-          <div class="skills__skill">
+          <div class="skills__skill skills__skill--large">
             <div>
               <img src="static/skills/html5.svg" alt="html5" />
               <p>html5</p>
             </div>
           </div>
-          <div class="skills__skill">
+          <div class="skills__skill skills__skill--large">
             <div>
               <img src="static/skills/css3.svg" alt="css3" />
               <p>css3</p>
             </div>
           </div>
-          <div class="skills__skill">
+          <div class="skills__skill skills__skill--large">
             <div>
               <img src="static/skills/javascript.svg" alt="javascript" />
               <p>javascript</p>
             </div>
           </div>
-          <div class="skills__skill">
+          <div class="skills__skill skills__skill--large">
             <div>
               <img src="static/skills/react.svg" alt="react" />
               <p>react</p>
             </div>
           </div>
-          <div class="skills__skill">
+          <div class="skills__skill skills__skill--large">
             <div>
               <img src="static/skills/redux.svg" alt="redux" />
               <p>redux</p>
             </div>
           </div>
-          <div class="skills__skill">
+          <div class="skills__skill skills__skill--large">
             <div>
               <img src="static/skills/feathers.svg" alt="feathers" />
               <p>feathers</p>
             </div>
           </div>
-          <div class="skills__skill">
+          <div class="skills__skill skills__skill--large">
             <div>
               <img src="static/skills/sass.svg" alt="sass" />
               <p>sass</p>
             </div>
           </div>
-          <div class="skills__skill">
+          <div class="skills__skill skills__skill--large">
             <div>
               <img src="static/skills/json.svg" alt="json" />
               <p>json</p>
             </div>
           </div>
-          <div class="skills__skill">
+          <div class="skills__skill skills__skill--large">
             <div>
               <img src="static/skills/sql.svg" alt="sql" />
               <p>sql</p>
             </div>
           </div>
-          <div class="skills__skill">
+          <div class="skills__skill skills__skill--large">
             <div>
               <img src="static/skills/python.svg" alt="python" />
               <p>python</p>
             </div>
           </div>
-          <div class="skills__skill">
+          <div class="skills__skill skills__skill--large">
             <div>
               <img src="static/skills/django.svg" alt="django" />
               <p>django</p>
             </div>
           </div>
-          <div class="skills__skill">
+          <div class="skills__skill skills__skill--large">
             <div>
               <img src="static/skills/git.svg" alt="git" />
               <p>git</p>
@@ -197,51 +197,115 @@
         </div>
       </div>
       <div
+        class="experience container--inner removed"
+        id="experience"
+        onwheel="switchFrom(event, 'experience')"
+      ></div>
+      <div
         class="projects container--inner removed"
         id="projects"
         onwheel="switchFrom(event, 'projects')"
       >
         <div class="projects__list top-space side-space">
           <div class="projects__proj">
-            <div>
-              <h1>Moving Palettes</h1>
-              <p>
-                a soothing, browsable collection of color palettes accompanied by some of my
-                favorite gifs, cinemagraphs, and moving images.
-              </p>
-              <div class="projects__proj__tech">
-                <div class="skills__skill">
-                  <div class="skills__skill">
-                    <div>
-                      <img src="static/skills/html5.svg" alt="html5" />
-                      <p>html5</p>
-                    </div>
-                  </div>
-                  <div class="skills__skill">
-                    <div>
-                      <img src="static/skills/css3.svg" alt="css3" />
-                      <p>css3</p>
-                    </div>
-                  </div>
-                  <div class="skills__skill">
-                    <div>
-                      <img src="static/skills/react.svg" alt="react" />
-                      <p>react</p>
-                    </div>
-                  </div>
-                  <div class="skills__skill">
-                    <div>
-                      <img src="static/skills/feathers.svg" alt="feathers" />
-                      <p>feathers</p>
-                    </div>
-                  </div>
-                  <div class="skills__skill">
-                    <div>
-                      <img src="static/skills/mongodb.svg" alt="mongodb" />
-                      <p>mongodb</p>
-                    </div>
-                  </div>
-                </div>
+            <h1>Moving Palettes</h1>
+            <p>
+              a soothing, browsable collection of color palettes generated from
+              some of my favorite gifs, cinemagraphs, and moving images.
+            </p>
+            <div class="projects__proj__tech">
+              <div class="skills__skill skills__skill--small">
+                <img src="static/skills/html5.svg" alt="html5" title="html5" />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img src="static/skills/css3.svg" alt="css3" title="css3" />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img
+                  src="static/skills/javascript.svg"
+                  alt="javascript"
+                  title="javascript"
+                />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img src="static/skills/react.svg" alt="react" title="react" />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img
+                  src="static/skills/feathers.svg"
+                  alt="feathers"
+                  title="feathers"
+                />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img
+                  src="static/skills/mongodb.svg"
+                  alt="mongodb"
+                  title="mongodb"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="projects__proj">
+            <h1>Capital Group Capstone</h1>
+            <p>
+              a flask microsite that uses some fun js-powered activities to help
+              users simulate a balanced investment portfolio.
+            </p>
+            <div class="projects__proj__tech">
+              <div class="skills__skill skills__skill--small">
+                <img src="static/skills/html5.svg" alt="html5" title="html5" />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img src="static/skills/css3.svg" alt="css3" title="css3" />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img
+                  src="static/skills/javascript.svg"
+                  alt="javascript"
+                  title="javascript"
+                />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img
+                  src="static/skills/python.svg"
+                  alt="python"
+                  title="python"
+                />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img src="static/skills/flask.png" alt="flask" title="flask" />
+              </div>
+            </div>
+          </div>
+          <div class="projects__proj">
+            <h1>Fabflix</h1>
+            <p>
+              a mock ecommerce site that lets you browse through movies and
+              their corresponding actors.
+            </p>
+            <div class="projects__proj__tech">
+              <div class="skills__skill skills__skill--small">
+                <img src="static/skills/html5.svg" alt="html5" title="html5" />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img src="static/skills/css3.svg" alt="css3" title="css3" />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img
+                  src="static/skills/javascript.svg"
+                  alt="javascript"
+                  title="javascript"
+                />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img src="static/skills/java.svg" alt="java" title="java" />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img src="static/skills/sql.svg" alt="sql" title="sql" />
+              </div>
+              <div class="skills__skill skills__skill--small">
+                <img src="static/skills/aws.svg" alt="aws" title="aws" />
               </div>
             </div>
           </div>

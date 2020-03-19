@@ -225,6 +225,10 @@ body {
 .skills__skill--small {
   height: 2.5rem;
   width: 2.5rem;
+  background-image: linear-gradient(
+    var(--gold-semi-opaque),
+    var(--dark-coral-semi-opaque)
+  );
 }
 
 .skills__skill--small img {
@@ -255,6 +259,93 @@ body {
   padding: 0px;
 }
 
+.experience__line {
+  width: 1px;
+  height: 20rem;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-right: 2px solid var(--coral);
+}
+
+.experience__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__desc {
+  padding: 0.25rem 0.5rem;
+}
+
+.experience__job {
+  height: 5rem;
+  width: 45%;
+
+  border-radius: 5px;
+  background-image: linear-gradient(
+    var(--white-semi-opaque),
+    rgba(249, 249, 247, 0)
+  );
+}
+
+.experience__job:nth-child(even) {
+  align-self: flex-end;
+}
+
+.experience__job h1 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+}
+
+.experience__job h2 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 11px;
+}
+
+.experience__job__dot {
+  width: 1rem;
+  height: 1rem;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  margin-top: 1.5rem;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 100%;
+  background-image: linear-gradient(var(--gold), var(--coral));
+}
+
+.experience__job__date {
+  padding: 0px;
+  margin: 0px;
+  width: 5rem;
+  font-size: 9px;
+  text-align: center;
+  margin-top: 1.5rem;
+
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.experience__job__date--even {
+  right: 7rem;
+  left: 0;
+}
+
+.experience__job__date--odd {
+  right: 0;
+  left: 7rem;
+}
+
 .projects__list {
   display: block;
 }
@@ -262,11 +353,11 @@ body {
 .projects__proj {
   margin: 3px;
   color: var(--white);
-  /* background-image: linear-gradient(
-    var(--light-beige-semi-opaque),
-    var(--white-semi-opaque)
-  ); */
-  background-color: var(--taupe-semi-opaque);
+  background-image: linear-gradient(
+    var(--taupe-semi-opaque),
+    rgba(249, 249, 247, 0)
+  );
+  /* background-color: var(--taupe-semi-opaque); */
   border-radius: 5px;
 
   display: grid;

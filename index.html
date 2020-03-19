@@ -200,7 +200,67 @@
         class="experience container--inner removed"
         id="experience"
         onwheel="switchFrom(event, 'experience')"
-      ></div>
+      >
+        <div class="experience__line"></div>
+        <div class="experience__list top-space side-space">
+          <div class="experience__job">
+            <div class="experience__job__dot"></div>
+            <div class="experience__job__date experience__job__date--odd ">
+              MAY 19 - PRES
+            </div>
+            <div class="experience__desc">
+              <h1>
+                Beyond Limits AI
+              </h1>
+              <h2>
+                Software Engineer, Front End
+              </h2>
+            </div>
+          </div>
+          <div class="experience__job">
+            <div class="experience__job__dot"></div>
+            <div class="experience__job__date experience__job__date--even">
+              APR 18 - SEP 18
+            </div>
+            <div class="experience__desc">
+              <h1>
+                Capital Group
+              </h1>
+              <h2>
+                Software Project Engineer
+              </h2>
+            </div>
+          </div>
+          <div class="experience__job">
+            <div class="experience__job__dot"></div>
+            <div class="experience__job__date experience__job__date--odd">
+              JUN 17 - SEP 17
+            </div>
+            <div class="experience__desc">
+              <h1>
+                TenantBase
+              </h1>
+              <h2>
+                Software Engineering Intern
+              </h2>
+            </div>
+          </div>
+          <div class="experience__job">
+            <div class="experience__job__dot"></div>
+            <div class="experience__job__date experience__job__date--even">
+              JUN 15 - SEP 15
+            </div>
+            <div class="experience__desc">
+              <h1>
+                Dell EMC - DSSD
+              </h1>
+              <h2>
+                QA Intern
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
       <div
         class="projects container--inner removed"
         id="projects"
@@ -312,520 +372,5 @@
         </div>
       </div>
     </div>
-
-    <!-- referenced from https://erikterwan.com/ -->
-    <!-- <section class="nav">
-	  <div class="navbar">
-	    <input type="checkbox" />
-	    <span class="hamburger"></span>
-	    <span class="hamburger"></span>
-	    <span class="hamburger"></span>
-
-	    <ul class="navbar__elements">
-	      <a href="#title"><li>home</li></a>
-	      <a href="#resume"><li>background</li></a>
-				<a href="#skills"><li>skills</li></a>
-	      <a href="#education"><li>education</li></a>
-				<a href="#experience"><li>experience</li></a>
-	      <a href="#contact"><li>contact</li></a>
-	    </ul>
-	  </div>
-	</section>
-
-	<section id="title" class="title">
-		<div class="name">
-			<h4>Hello World! I'm</h4>
-			<h1>Laura Marsh</h1>
-			<h5>A developer obsessed with user-facing technologies and experiences.</h5>
-		</div>
-	</section>
-
-
-	<section id="resume" class="resume">
-		<br>
-		<br>
-		<br>
-		<div class="profile">
-			<div class="profile__portrait"></div>
-			<div class="profile__summary">
-				<h3>Nice to meet you!</h3>
-				<p>
-					I'm a software developer currently located in northern California.
-					I recently graduated from <span style="font-size:1.15em;font-weight:bold;color:#1a90ff">UC Irvine</span> with a B.S. in
-					<span style="font-size:1.15em;font-weight:bold;color:#1a90ff">Software Engineering</span>, and I'm on the search for a full time position as a
-					developer. I've always been drawn to the
-					intersection between design and development.  The process of turning
-					creative ideas into tangible products fascinates me, and I have a passion
-					for the user experience!
-					I have experience in <span style="font-size:1.15em;font-weight:bold;color:#1a90ff">front-end development</span> and many project ventures
-					into <span style="font-size:1.15em;font-weight:bold;color:#1a90ff">full-stack</span> development under my belt. A career goal of mine is to deepen my understanding of full-stack technologies
-					while maintaining my affinity for the front end. Right now, I'm excited
-					to explore my opportunities to work with the greatest in tech.
-					<span style="font-size:1.15em;font-weight:bold;color:#1a90ff">When I'm not staring at a computer screen</span> you can find me outside,
-					hanging out with my dog, at a music festival, or swimming!
-				</p>
-			</div>
-		</div>
-		<br>
-		<br>
-		<br>
-		<div id="skills" class="skills">
-			<h3>Skills</h3>
-			<a class="skills__resume container" href="static/LauraMarshResume18S.pdf" target="_blank">
-				<p class="skills__resume--link">View My Resume</p>
-				<img src="static/right-arrow.svg" class="skills__resume--link arrow arrow--animated">
-			</a>
-			<div class="skills__categories container">
-				<div class="skills__categories--sub">
-					<div class="skills__categories--block">
-						<h5 class="header--teal">LANGUAGES</h5>
-						<p>Python</p>
-						<p>Java</p>
-						<p>HTML</p>
-						<p>CSS</p>
-						<p>JavaScript</p>
-						<p>SQL</p>
-						<p>PHP</p>
-						<p>JSP</p>
-						<p>JSON</p>
-					</div>
-					<div class="skills__categories--block">
-						<h5 class="header--teal">TOOLS</h5>
-						<p>Sublime Text 2</p>
-						<p>Eclipse</p>
-						<p>PyCharm</p>
-						<p>Android Studio</p>
-						<p>MySQL</p>
-						<p>GitHub</p>
-						<p>Linux/Unix</p>
-						<p>AWS EC2</p>
-						<p>Apache Tomcat</p>
-					</div>
-				</div>
-				<div class="skills__categories--sub">
-					<div class="skills__categories--block">
-						<h5 class="header--teal">FRAMEWORKS</h5>
-						<p>Django</p>
-						<p>Flask</p>
-						<p>AJAX</p>
-						<p>JQuery</p>
-						<p>React</p>
-						<p>REST</p>
-						<p>Bootstrap</p>
-					</div>
-					<div class="skills__categories--block">
-						<h5 class="header--teal">DESIGN</h5>
-						<p>Adbe Photoshop</p>
-						<p>Illustrator</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<br>
-		<br>
-		<br>
-
-		<div id="education" class="education">
-			<h3>Education</h3>
-			<div class="education__school container">
-				<p class="education__school--major">B.S. in Software Engineering</p>
-				<p class="education__school--name">University of California, Irvine</p>
-				<p class="education__school--date">2014 - Sept 2018</p>
-			</div>
-			<div class="education__courses container">
-				<h5 class="header--teal">RELEVANT COURSEWORK</h5>
-				<p>Programming in Python</p>
-				<p>Object-Oriented Programming</p>
-				<p>Data Structures & Analysis</p>
-				<p>Algorithms</p>
-				<p>Intro to Computer Networks</p>
-				<p>Software Design</p>
-				<p>Software Testing & Quality Assurance</p>
-				<p>Human Computer Interaction & UI Software</p>
-				<p>Data Management</p>
-				<p>Internet Apps Engineering</p>
-			</div>
-		</div>
-
-		<br>
-		<br>
-		<br>
-
-		<div id="experience" class="experience">
-			<h3>Experience</h3>
-			<ul class="collapsible__container">
-				<li class="collapsible">
-					<div class="collapsible__header experience--tenantbase">
-						<p>TENANTBASE</p>
-						<img src="static/down-arrow.svg" class="arrow arrow--expand arrow--rotate-back"></img>
-					</div>
-					<div class="collapsible__content collapsible__content--fast">
-						<p class="experience__position">Front End Engineering Intern</p>
-						<p class="experience__location">Irvine, CA</p>
-						<p class="experience__date">June 2017 - Sept 2017</p>
-						<p class="experience__desc">
-							Worked directly under the CTO to apply Search Engine Optimization
-							techniques to main search pages resulting in a leap in monthly site
-							viewers.  I was able to better understand many modern front-end
-							web development practices and had the oportunity to learn from some
-							amazing mentors.
-						</p>
-						<div class="technologies">
-							<h5 class="technologies__button">HTML/CSS</h5>
-							<h5 class="technologies__button">JAVASCRIPT</h5>
-							<h5 class="technologies__button">DJANGO</h5>
-							<h5 class="technologies__button">WAGTAIL</h5>
-							<h5 class="technologies__button">PYTHON</h5>
-							<h5 class="technologies__button">GIT</h5>
-							<h5 class="technologies__button">SUBL TEXT 2</h5>
-						</div>
-					</div>
-				</li>
-				<li class="collapsible">
-					<div class="collapsible__header experience--inwerks">
-						<p>INWERKS</p>
-						<img src="static/down-arrow.svg" class="arrow arrow--expand arrow--rotate-back"></img>
-					</div>
-					<div class="collapsible__content collapsible__content--fast">
-						<p class="experience__position">Android App Dev</p>
-						<p class="experience__location">Rancho Santa Margarita, CA</p>
-						<p class="experience__date">Dec 2016 - March 2017</p>
-						<p class="experience__desc">
-							Was the main Android os programmer for the inWerks application.  I
-							worked closely with a small team of mobile developers to enhance
-							and maintain the iphone and android apps.  I gained some exposure
-							to android mobile UI design and gradle, and had the chance to
-							learn and incorporate geocaching APIs.
-						</p>
-						<div class="technologies">
-							<h5 class="technologies__button">JAVA</h5>
-							<h5 class="technologies__button">ANDROID STUDIO</h5>
-							<h5 class="technologies__button">UBUNTU</h5>
-							<h5 class="technologies__button">GIT</h5>
-						</div>
-					</div>
-				</li>
-				<li class="collapsible">
-					<div class="collapsible__header experience--dellemc">
-						<p>DELL EMC</p>
-						<img src="static/down-arrow.svg" class="arrow arrow--expand arrow--rotate-back"></img>
-					</div>
-					<div class="collapsible__content collapsible__content--fast">
-						<p class="experience__position">Firmware QA Intern</p>
-						<p class="experience__location">Menlo Park, CA</p>
-						<p class="experience__date">June 2015 - Sept 2015</p>
-						<p class="experience__desc">
-							Joined a team of firmware engineers at DSSD, a startup within Dell
-							EMC, to perform QA analysis on their main product.  I gained experience in
-							test engineering by writing suites that would monitor basic firmware functionality.
-						</p>
-						<div class="technologies">
-							<h5 class="technologies__button">PYTHON</h5>
-							<h5 class="technologies__button">SUBL TEXT 2</h5>
-							<h5 class="technologies__button">RASPBERRY PI</h5>
-							<h5 class="technologies__button">GIT</h5>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-
-		<br>
-		<br>
-		<br>
-
-		<div class="projects">
-			<h3>Projects</h3>
-			<ul class="collapsible__container">
-				<li class="collapsible">
-					<div class="collapsible__header projects--capgroup">
-						<p>CAPITAL GROUP CAPSTONE</p>
-						<img src="static/down-arrow.svg" class="arrow arrow--expand arrow--rotate-back"></img>
-					</div>
-					<div class="collapsible__content collapsible__content--slow">
-						<div class="demo">
-							<img src="static/editor.svg" class="demo__graphic">
-							<div class="demo__image demo__image--scroll">
-								<img src="static/capitalgrouplong.png">
-							</div>
-						</div>
-						<p class="experience__desc">
-							Senior Capstone Project for my Software Engineering degree at UCI.
-							A small team and I partnered with Capital Group, an investment
-							banking firm, to create a microsite with some unique interactive
-							tools that would help inform a new demographic of visitors.  The site
-							includes a landing page where a flow of features would allow users
-							to better conceptualize investment banking, and ultimately give them
-							the ability to contact local Capital Group representatives.
-							Due to legal reasons, we are unable to keep the site deployed for
-							extended periods of time, but feel free to browse the git repository.
-						</p>
-						<div class="projects__link">
-							<a class="skills__resume" href="https://github.com/mattardel/cgui" target="_blank">
-								<p class="skills__resume--link">View on GitHub</p>
-								<img src="static/right-arrow.svg" class="skills__resume--link arrow arrow--animated">
-							</a>
-						</div>
-						<div class="technologies">
-							<h5 class="technologies__button">HTML</h5>
-							<h5 class="technologies__button">CSS/LESS</h5>
-							<h5 class="technologies__button">JAVASCRIPT</h5>
-							<h5 class="technologies__button">FLASK</h5>
-							<h5 class="technologies__button">PYTHON</h5>
-							<h5 class="technologies__button">GIT</h5>
-							<h5 class="technologies__button">PYCHARM</h5>
-						</div>
-					</div>
-				</li>
-				<li class="collapsible">
-					<div class="collapsible__header projects--palettes">
-						<p>MOVING PALETTES</p>
-						<img src="static/down-arrow.svg" class="arrow arrow--expand arrow--rotate-back"></img>
-					</div>
-					<div class="collapsible__content collapsible__content--slow">
-						<div class="demo">
-							<img src="static/editor.svg" class="demo__graphic">
-							<div class="demo__image">
-								<img src="static/palettes.png">
-							</div>
-						</div>
-						<p class="experience__desc">
-							This application displays a small collection of some of my favorite
-							gifs and cinemagraphs along with a corresponding color scheme.  It's
-							a fun venture into single page ReactJS/NodeJS apps and allowed me to
-							further understand how to maximize efficiency when loading and querying.
-							Not a lot of practical use, but sometimes it's fun to sit down and
-							look at some cool pictures.
-						</p>
-						<div class="projects__link">
-							<a class="skills__resume" href="https://github.com/lauramarsh/movingPalettes" target="_blank">
-								<p class="skills__resume--link">View on GitHub</p>
-								<img src="static/right-arrow.svg" class="skills__resume--link arrow arrow--animated">
-							</a>
-						</div>
-						<div class="technologies">
-							<h5 class="technologies__button">HTML/CSS</h5>
-							<h5 class="technologies__button">JAVASCRIPT</h5>
-							<h5 class="technologies__button">REACT</h5>
-							<h5 class="technologies__button">NODE</h5>
-							<h5 class="technologies__button">MONGODB</h5>
-							<h5 class="technologies__button">GIT</h5>
-							<h5 class="technologies__button">ATOM</h5>
-						</div>
-					</div>
-				</li>
-				<li class="collapsible">
-					<div class="collapsible__header projects--fabflix">
-						<p>FABFLIX</p>
-						<img src="static/down-arrow.svg" class="arrow arrow--expand arrow--rotate-back"></img>
-					</div>
-					<div class="collapsible__content collapsible__content--slow">
-						<div class="demo">
-							<img src="static/editor.svg" class="demo__graphic">
-							<div class="demo__image">
-								<img src="static/fabflix.png">
-							</div>
-						</div>
-						<p class="experience__desc">
-							A full-stack web application created for an applied databases course.
-							I created a movie-browsing site where the user could search for and purchase
-							movies from databases populated with data gathered from IMDB.  From
-							this project I gained valuable exposure into many modern web development
-							practices, front-end and back-end.
-						</p>
-						<div class="projects__link">
-							<a class="skills__resume" href="https://github.com/lauramarsh/fabflix" target="_blank">
-								<p class="skills__resume--link">View on GitHub</p>
-								<img src="static/right-arrow.svg" class="skills__resume--link arrow arrow--animated">
-							</a>
-						</div>
-						<div class="technologies">
-							<h5 class="technologies__button">HTML/CSS</h5>
-							<h5 class="technologies__button">JAVASCRIPT</h5>
-							<h5 class="technologies__button">AJAX/JQUERY</h5>
-							<h5 class="technologies__button">SQL</h5>
-							<h5 class="technologies__button">JAVA</h5>
-							<h5 class="technologies__button">APACHE TOMCAT</h5>
-							<h5 class="technologies__button">AWS EC2</h5>
-							<h5 class="technologies__button">GIT</h5>
-							<h5 class="technologies__button">ECLIPSE</h5>
-						</div>
-					</div>
-				</li>
-				<li class="collapsible">
-					<div class="collapsible__header projects--vipster">
-						<p>VIPSTER</p>
-						<img src="static/down-arrow.svg" class="arrow arrow--expand arrow--rotate-back"></img>
-					</div>
-					<div class="collapsible__content collapsible__content--slow">
-						<div class="demo">
-							<img src="static/editor.svg" class="demo__graphic">
-							<div class="demo__image">
-								<img src="static/vipster.png">
-							</div>
-						</div>
-						<p class="experience__desc">
-							A small RESTful eCommerce application that lists a variety of musical
-							artists' VIP concert packages.  The goal was to learn how to track
-							user activity throughout a session and accurately display REST-retrieved
-							information.
-						</p>
-						<div class="projects__link">
-							<a class="skills__resume" href="https://github.com/lauramarsh/VIPster" target="_blank">
-								<p class="skills__resume--link">View on GitHub</p>
-								<img src="static/right-arrow.svg" class="skills__resume--link arrow arrow--animated">
-							</a>
-						</div>
-						<div class="technologies">
-							<h5 class="technologies__button">HTML/CSS</h5>
-							<h5 class="technologies__button">JAVASCRIPT</h5>
-							<h5 class="technologies__button">AJAX/JQUERY</h5>
-							<h5 class="technologies__button">SQL</h5>
-							<h5 class="technologies__button">JAVA</h5>
-							<h5 class="technologies__button">PHP</h5>
-							<h5 class="technologies__button">JSP</h5>
-							<h5 class="technologies__button">APACHE TOMCAT</h5>
-							<h5 class="technologies__button">GIT</h5>
-							<h5 class="technologies__button">ECLIPSE</h5>
-						</div>
-					</div>
-				</li>
-				<li class="collapsible">
-					<div class="collapsible__header projects--kurzgesagt">
-						<p>KURZGESAGT</p>
-						<img src="static/down-arrow.svg" class="arrow arrow--expand arrow--rotate-back"></img>
-					</div>
-					<div class="collapsible__content collapsible__content--slow">
-						<div class="demo">
-							<img src="static/editor.svg" class="demo__graphic">
-							<div class="demo__image demo__image--scroll">
-								<img src="static/kurzlong.png">
-							</div>
-						</div>
-						<p class="experience__desc">
-							Just for fun, I made a small landing page for a Youtube channel that I adore.
-							Kurzegesagt aims to explain big concepts to their viewers in easy-to-
-							understand ways. I used them as a conduit to explore front-end frameworks that
-							I was curious about.  I find their work to be both intellectually and aesthetically
-							pleasing! Check them out here:
-							<a style="color: #9CAFB7;" href="https://kurzgesagt.org/">kurzgesagt.org</a>!
-						</p>
-						<div class="projects__link">
-							<a class="skills__resume" href="https://github.com/lauramarsh/kurzgesagtLandingPage" target="_blank">
-								<p class="skills__resume--link">View on GitHub</p>
-								<img src="static/right-arrow.svg" class="skills__resume--link arrow arrow--animated">
-							</a>
-						</div>
-						<div class="technologies">
-							<h5 class="technologies__button">HTML/CSS</h5>
-							<h5 class="technologies__button">JAVASCRIPT</h5>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-
-		<br>
-		<br>
-		<br>
-
-	</section> -->
-
-    <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-    <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-    <!-- <section class="footer">
-		<p>@2018 LAURA MARSH</p>
-		<div id="contact" class="contact">
-			<a class="contact__button contact__button--email" href="mailto:lau.lyn.marsh@gmail.com" data-link="lau.lyn.marsh@gmail.com">
-				<img src="static/mail2.svg">
-			</a>
-			<a class="contact__button contact__button--linkedin" href="https://www.linkedin.com/in/laura-marsh-lm/" data-link="linkedin.com/in/laura-marsh-lm/">
-				<img src="static/linkedin.svg">
-			</a>
-			<a class="contact__button contact__button--github" href="https://github.com/lauramarsh" data-link="github.com/lauramarsh">
-				<img src="static/github2.svg">
-			</a>
-		</div>
-		<p class="contact__text">...</p>
-	</section>
-
-	<br>
-	<br>
-	<br> -->
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <!-- <script>
-
-		// for the delayed scrolling
-		$('a[href^="#"]').on('click', function(event) {
-			var target = $(this.getAttribute('href'));
-		  if( target.length ) {
-				event.preventDefault();
-		    $('html, body').stop().animate({
-					scrollTop: target.offset().top
-				}, 500);
-			}
-		});
-
-
-
-		// for the paralax scrolling NOT CURRENTLY IN USE
-		var background_image_parallax = function($object, multiplier){
-			multiplier = 1 - multiplier;
-		  var $doc = $(document);
-			$(window).scroll(function(){
-			  var from_top = $doc.scrollTop(),
-			      bg_css = '0px ' + ((multiplier * from_top * -1) + 120) + 'px';
-			  $object.css({'background-position' : bg_css });
-		  });
-		};
-
-		function parallaxPermission(w) {
-	    if (w.matches) { // If media query matches
-	    	console.log("no parallax scrolling");
-	    } else {
-				background_image_parallax($('.portrait'), 0.85);
-	    }
-		}
-
-		var w = window.matchMedia("(max-width: 480px)")
-		parallaxPermission(w) // Call listener function at run time
-		w.addListener(parallaxPermission) // Attach listener function on state changes
-
-
-
-		// for expanding collapsibles
-		var collapsibles = document.getElementsByClassName('collapsible__header');
-		var i;
-
-		for (i = 0; i < collapsibles.length; i++) {
-			collapsibles[i].addEventListener('click', function() {
-    		// this.classList.toggle("active"); FOR LATER ARROW MOVEMENT OR SUMTHIN
-				var content = this.nextElementSibling;
-				if (content.style.maxHeight) {
-		      content.style.maxHeight = null;
-		    } else {
-					content.style.maxHeight = content.scrollHeight + 'px';
-		    }
-			});
-		}
-
-		$(function () {
-			// for contact hover text
-	    $('.contact__button').hover(function (e) {
-	    	var text = $(this).data('link');
-	      $('.contact__text').html(text);
-	    });
-
-			// for collapsible svg img rotation
-			$('.collapsible__header').click(function (e) {
-				$(this).find('img').toggleClass('arrow--rotate');
-				$(this).find('img').toggleClass('arrow--rotate-back');
-			});
-		});
-
-
-	</script> -->
   </body>
 </html>
